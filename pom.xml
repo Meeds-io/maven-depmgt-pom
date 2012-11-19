@@ -42,28 +42,55 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
+    <commons-chain.version>1.2</commons-chain.version>
+    <commons-httpclient.version>3.1</commons-httpclient.version>
     <commons-lang.version>2.6</commons-lang.version>
+    <ical4j.version>1.0-beta5</ical4j.version>
     <javax.activation.version>1.1.1</javax.activation.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.jcr.version>1.0</javax.jcr.version>
+    <javax.mail.mail.version>1.4.4</javax.mail.mail.version>
+    <javax.portlet.portlet-api.version>2.0</javax.portlet.portlet-api.version>
     <javax.servlet.servlet-api.version>2.5</javax.servlet.servlet-api.version>
     <javax.ws.rs.version>1.0</javax.ws.rs.version>
     <junit.version>4.10</junit.version>
     <mockito.version>1.8.1</mockito.version>
+    <org.apache.jackrabbit.version>1.6.4</org.apache.jackrabbit.version>
+    <org.aspectj.version>1.6.11</org.aspectj.version>
+    <org.chromattic.version>1.1.4</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
+    <org.exoplatform.framework.junit.version>1.2.2-GA</org.exoplatform.framework.junit.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
+    <org.javassist.version>3.14.0-GA</org.javassist.version>
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
-    <org.slf4j.slf4j-simple.version>1.5.6</org.slf4j.slf4j-simple.version>
+    <org.slf4j.slf4j-simple.version>1.5.8</org.slf4j.slf4j-simple.version>
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>1.5.2</quartz.version>
+    <rome.version>1.0</rome.version>
+    <xml-apis.version>1.0.b2</xml-apis.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>commons-chain</groupId>
+        <artifactId>commons-chain</artifactId>
+        <version>${commons-chain.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>${commons-httpclient.version}</version>
+      </dependency>
+      <dependency>
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
         <version>${commons-lang.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ical4j</groupId>
+        <artifactId>ical4j</artifactId>
+        <version>${ical4j.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.activation</groupId>
@@ -81,6 +108,16 @@
         <version>${javax.jcr.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>${javax.mail.mail.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.portlet</groupId>
+        <artifactId>portlet-api</artifactId>
+        <version>${javax.portlet.portlet-api.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>${javax.servlet.servlet-api.version}</version>
@@ -94,6 +131,21 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.jackrabbit</groupId>
+        <artifactId>jackrabbit-webdav</artifactId>
+        <version>${org.apache.jackrabbit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${org.aspectj.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.core</artifactId>
+        <version>${org.chromattic.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
@@ -121,9 +173,19 @@
         <version>${org.codehaus.cargo.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.exoplatform.tool</groupId>
+        <artifactId>exo.tool.framework.junit</artifactId>
+        <version>${org.exoplatform.framework.junit.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
         <version>${org.hsqldb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>${org.javassist.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
@@ -154,6 +216,16 @@
         <groupId>quartz</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>rome</groupId>
+        <artifactId>rome</artifactId>
+        <version>${rome.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>xml-apis</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${xml-apis.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
