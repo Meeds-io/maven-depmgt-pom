@@ -32,29 +32,39 @@
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
   <properties>
     <!-- **************************************** -->
-    <!-- Jira Settings                            -->
-    <!-- **************************************** -->
-    <jira.project.key>DEP</jira.project.key>
-    <!-- **************************************** -->
     <!-- Jenkins Settings                         -->
     <!-- **************************************** -->
     <jenkins.job.name>maven-depmgt-pom-master-ci</jenkins.job.name>
+    <!-- **************************************** -->
+    <!-- Jira Settings                            -->
+    <!-- **************************************** -->
+    <jira.project.key>DEP</jira.project.key>
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
     <commons-chain.version>1.2</commons-chain.version>
     <commons-collections.version>3.2.1</commons-collections.version>
+    <commons-fileupload.version>1.2.1</commons-fileupload.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
     <commons-io.version>1.4</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
+    <cssparser.version>0.9.5</cssparser.version>
+    <dom4j.version>1.6.1</dom4j.version>
+    <ecs.version>1.4.2</ecs.version>
+    <flying-saucer.version>9.0.1</flying-saucer.version>
+    <gwt.version>2.4.0</gwt.version>
+    <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
     <ical4j.version>1.0-beta5</ical4j.version>
+    <itext.version>2.1.7</itext.version>
     <javax.activation.version>1.1.1</javax.activation.version>
     <javax.annotation.version>1.0</javax.annotation.version>
-    <javax.jcr.version>1.0</javax.jcr.version>
+    <javax.inject.version>1</javax.inject.version>
+    <javax.jcr.jcr.version>1.0</javax.jcr.jcr.version>
     <javax.mail.mail.version>1.4.4</javax.mail.mail.version>
     <javax.portlet.portlet-api.version>2.0</javax.portlet.portlet-api.version>
     <javax.servlet.servlet-api.version>2.5</javax.servlet.servlet-api.version>
-    <javax.ws.rs.version>1.0</javax.ws.rs.version>
+    <javax.validation.version>1.0.0.GA</javax.validation.version>
+    <javax.ws.rs.jsr311-api.version>1.0</javax.ws.rs.jsr311-api.version>
     <javax.xml.bind.jaxb-api.version>2.1</javax.xml.bind.jaxb-api.version>
     <junit.version>4.10</junit.version>
     <mockito.version>1.8.1</mockito.version>
@@ -69,16 +79,44 @@
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
     <org.slf4j.version>1.5.8</org.slf4j.version>
+    <org.suigeneris.version>0.4.2</org.suigeneris.version>
+    <org.wikimodel.version>2.0.7-SNAP-rev-532</org.wikimodel.version>
     <org.xwiki.platform.version>4.1.3</org.xwiki.platform.version>
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>1.5.2</quartz.version>
     <rome.version>1.0</rome.version>
+    <smartgwt.version>2.5</smartgwt.version>
     <stax-api.version>1.0.1</stax-api.version>
     <xml-apis.version>1.3.04</xml-apis.version>
     <xpp3.version>1.1.4c</xpp3.version>
   </properties>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-dev</artifactId>
+        <version>${gwt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-servlet</artifactId>
+        <version>${gwt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-user</artifactId>
+        <version>${gwt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.lowagie</groupId>
+        <artifactId>itext</artifactId>
+        <version>${itext.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.smartgwt</groupId>
+        <artifactId>smartgwt</artifactId>
+        <version>${smartgwt.version}</version>
+      </dependency>
       <dependency>
         <groupId>commons-chain</groupId>
         <artifactId>commons-chain</artifactId>
@@ -88,6 +126,11 @@
         <groupId>commons-collections</groupId>
         <artifactId>commons-collections</artifactId>
         <version>${commons-collections.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>${commons-fileupload.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-httpclient</groupId>
@@ -105,6 +148,16 @@
         <version>${commons-lang.version}</version>
       </dependency>
       <dependency>
+        <groupId>dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>${dom4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ecs</groupId>
+        <artifactId>ecs</artifactId>
+        <version>${ecs.version}</version>
+      </dependency>
+      <dependency>
         <groupId>ical4j</groupId>
         <artifactId>ical4j</artifactId>
         <version>${ical4j.version}</version>
@@ -120,9 +173,14 @@
         <version>${javax.annotation.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>${javax.inject.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.jcr</groupId>
         <artifactId>jcr</artifactId>
-        <version>${javax.jcr.version}</version>
+        <version>${javax.jcr.jcr.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.mail</groupId>
@@ -140,9 +198,14 @@
         <version>${javax.servlet.servlet-api.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>${javax.validation.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.ws.rs</groupId>
         <artifactId>jsr311-api</artifactId>
-        <version>${javax.ws.rs.version}</version>
+        <version>${javax.ws.rs.jsr311-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
@@ -153,6 +216,16 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit-dep</artifactId>
+        <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sourceforge.cssparser</groupId>
+        <artifactId>cssparser</artifactId>
+        <version>${cssparser.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
@@ -230,6 +303,11 @@
         <version>${org.exoplatform.framework.junit.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate-validator.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
         <version>${org.hsqldb.version}</version>
@@ -266,12 +344,167 @@
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${org.slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
         <version>${org.slf4j.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.suigeneris</groupId>
+        <artifactId>jrcs.diff</artifactId>
+        <version>${org.suigeneris.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.suigeneris</groupId>
+        <artifactId>jrcs.rcs</artifactId>
+        <version>${org.suigeneris.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.wikimodel</groupId>
+        <artifactId>org.wikimodel.wem</artifactId>
+        <version>${org.wikimodel.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xhtmlrenderer</groupId>
+        <artifactId>flying-saucer-core</artifactId>
+        <version>${flying-saucer.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xhtmlrenderer</groupId>
+        <artifactId>flying-saucer-pdf</artifactId>
+        <version>${flying-saucer.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-component-api</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-component-default</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-configuration-api</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-context</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-properties</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-text</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-xml</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-gwt-dom</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-gwt-user</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-model</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-rendering-macro-code</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-wysiwyg-client</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-wysiwyg-plugin-api</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.xwiki.rendering</groupId>
         <artifactId>xwiki-rendering-api</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-macro-message</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-macro-toc</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-confluence</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-plain</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-wikimodel</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-xhtml</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-xwiki20</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-syntax-xwiki21</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-test</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-transformation-icon</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-transformation-macro</artifactId>
+        <version>${org.xwiki.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.rendering</groupId>
+        <artifactId>xwiki-rendering-wikimodel</artifactId>
         <version>${org.xwiki.platform.version}</version>
       </dependency>
       <dependency>
