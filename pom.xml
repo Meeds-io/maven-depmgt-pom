@@ -42,41 +42,38 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <byteman.version>2.0.4</byteman.version>
     <com.google.code.guice.version>2.0</com.google.code.guice.version>
     <com.google.guava.version>r09</com.google.guava.version>
+    <com.google.gwt.version>2.4.0</com.google.gwt.version>
     <com.ibm.icu.version>3.8</com.ibm.icu.version>
+    <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
+    <com.smartgwt.version>2.5</com.smartgwt.version>
     <commons-chain.version>1.2</commons-chain.version>
     <commons-collections.version>3.2.1</commons-collections.version>
     <commons-fileupload.version>1.2.1</commons-fileupload.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
     <commons-io.version>1.4</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
-    <cssparser.version>0.9.5</cssparser.version>
     <dom4j.version>1.6.1</dom4j.version>
     <ecs.version>1.4.2</ecs.version>
-    <flying-saucer.version>9.0.1</flying-saucer.version>
-    <geronimo.version>1.0</geronimo.version>
-    <gwt.version>2.4.0</gwt.version>
     <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
     <ical4j.version>1.0-beta5</ical4j.version>
-    <itext.version>2.1.7</itext.version>
     <javax.activation.version>1.1.1</javax.activation.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
-    <javax.jcr.jcr.version>1.0</javax.jcr.jcr.version>
-    <javax.mail.mail.version>1.4.4</javax.mail.mail.version>
-    <javax.portlet.portlet-api.version>2.0</javax.portlet.portlet-api.version>
-    <javax.servlet.servlet-api.version>2.5</javax.servlet.servlet-api.version>
+    <javax.jcr.version>1.0</javax.jcr.version>
+    <javax.mail.version>1.4.4</javax.mail.version>
+    <javax.portlet.version>2.0</javax.portlet.version>
+    <javax.servlet.version>2.5</javax.servlet.version>
     <javax.validation.version>1.0.0.GA</javax.validation.version>
-    <javax.ws.rs.jsr311-api.version>1.0</javax.ws.rs.jsr311-api.version>
-    <javax.xml.bind.jaxb-api.version>2.1</javax.xml.bind.jaxb-api.version>
+    <javax.ws.rs.version>1.0</javax.ws.rs.version>
+    <javax.xml.bind.version>2.1</javax.xml.bind.version>
     <junit.version>4.10</junit.version>
-    <juzu.version>0.5.1</juzu.version>
     <log4j.version>1.2.17</log4j.version>
-    <mockito.version>1.8.1</mockito.version>
-    <net.oauth.core.oauth.version>20100527</net.oauth.core.oauth.version>
+    <net.oauth.core.version>20100527</net.oauth.core.version>
+    <net.sourceforge.cssparser.version>0.9.5</net.sourceforge.cssparser.version>
     <net.sourceforge.nekohtml.version>1.9.14</net.sourceforge.nekohtml.version>
+    <org.apache.geronimo.specs.geronimo-stax-api_1.0.version>1.0</org.apache.geronimo.specs.geronimo-stax-api_1.0.version>
     <org.apache.jackrabbit.version>1.6.4</org.apache.jackrabbit.version>
     <org.aspectj.version>1.6.11</org.aspectj.version>
     <org.chromattic.version>1.1.4</org.chromattic.version>
@@ -84,20 +81,23 @@
     <org.exoplatform.framework.junit.version>1.2.2-GA</org.exoplatform.framework.junit.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
     <org.javassist.version>3.14.0-GA</org.javassist.version>
-    <org.jboss.version>2.2.9.GA</org.jboss.version>
+    <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
+    <org.jboss.jboss-commons.version>2.2.9.GA</org.jboss.jboss-commons.version>
     <org.json.version>20070829</org.json.version>
+    <org.juzu.version>0.5.1</org.juzu.version>
+    <org.mockito.version>1.8.1</org.mockito.version>
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
     <org.slf4j.version>1.5.8</org.slf4j.version>
     <org.staxnav.version>0.9.6</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.wikimodel.version>2.0.7-SNAP-rev-532</org.wikimodel.version>
+    <org.xhtmlrenderer.flying-saucer.version>9.0.1</org.xhtmlrenderer.flying-saucer.version>
     <org.xwiki.platform.version>4.1.3</org.xwiki.platform.version>
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>1.5.2</quartz.version>
     <rome.version>1.0</rome.version>
-    <smartgwt.version>2.5</smartgwt.version>
-    <stax-api.version>1.0.1</stax-api.version>
+    <stax.stax-api.version>1.0.1</stax.stax-api.version>
     <xerces.version>2.9.1</xerces.version>
     <xml-apis.version>1.3.04</xml-apis.version>
     <xpp3.version>1.1.4c</xpp3.version>
@@ -112,17 +112,17 @@
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-dev</artifactId>
-        <version>${gwt.version}</version>
+        <version>${com.google.gwt.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-servlet</artifactId>
-        <version>${gwt.version}</version>
+        <version>${com.google.gwt.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
-        <version>${gwt.version}</version>
+        <version>${com.google.gwt.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject</groupId>
@@ -137,12 +137,12 @@
       <dependency>
         <groupId>com.lowagie</groupId>
         <artifactId>itext</artifactId>
-        <version>${itext.version}</version>
+        <version>${com.lowagie.itext.version}</version>
       </dependency>
       <dependency>
         <groupId>com.smartgwt</groupId>
         <artifactId>smartgwt</artifactId>
-        <version>${smartgwt.version}</version>
+        <version>${com.smartgwt.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-chain</groupId>
@@ -207,22 +207,22 @@
       <dependency>
         <groupId>javax.jcr</groupId>
         <artifactId>jcr</artifactId>
-        <version>${javax.jcr.jcr.version}</version>
+        <version>${javax.jcr.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>mail</artifactId>
-        <version>${javax.mail.mail.version}</version>
+        <version>${javax.mail.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.portlet</groupId>
         <artifactId>portlet-api</artifactId>
-        <version>${javax.portlet.portlet-api.version}</version>
+        <version>${javax.portlet.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
-        <version>${javax.servlet.servlet-api.version}</version>
+        <version>${javax.servlet.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.validation</groupId>
@@ -232,12 +232,12 @@
       <dependency>
         <groupId>javax.ws.rs</groupId>
         <artifactId>jsr311-api</artifactId>
-        <version>${javax.ws.rs.jsr311-api.version}</version>
+        <version>${javax.ws.rs.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
-        <version>${javax.xml.bind.jaxb-api.version}</version>
+        <version>${javax.xml.bind.version}</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
@@ -257,12 +257,12 @@
       <dependency>
         <groupId>net.oauth.core</groupId>
         <artifactId>oauth</artifactId>
-        <version>${net.oauth.core.oauth.version}</version>
+        <version>${net.oauth.core.version}</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.cssparser</groupId>
         <artifactId>cssparser</artifactId>
-        <version>${cssparser.version}</version>
+        <version>${net.sourceforge.cssparser.version}</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.nekohtml</groupId>
@@ -272,7 +272,7 @@
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
         <artifactId>geronimo-stax-api_1.0_spec</artifactId>
-        <version>${geronimo.version}</version>
+        <version>${org.apache.geronimo.specs.geronimo-stax-api_1.0.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
@@ -367,22 +367,22 @@
       <dependency>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-common-core</artifactId>
-        <version>${org.jboss.version}</version>
+        <version>${org.jboss.jboss-commons.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.byteman</groupId>
         <artifactId>byteman</artifactId>
-        <version>${byteman.version}</version>
+        <version>${org.jboss.byteman.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.byteman</groupId>
         <artifactId>byteman-bmunit</artifactId>
-        <version>${byteman.version}</version>
+        <version>${org.jboss.byteman.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.byteman</groupId>
         <artifactId>byteman-install</artifactId>
-        <version>${byteman.version}</version>
+        <version>${org.jboss.byteman.version}</version>
       </dependency>
       <dependency>
         <groupId>org.json</groupId>
@@ -392,17 +392,17 @@
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
-        <version>${juzu.version}</version>
+        <version>${org.juzu.version}</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-portlet</artifactId>
-        <version>${juzu.version}</version>
+        <version>${org.juzu.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-all</artifactId>
-        <version>${mockito.version}</version>
+        <version>${org.mockito.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mortbay.jetty</groupId>
@@ -452,12 +452,12 @@
       <dependency>
         <groupId>org.xhtmlrenderer</groupId>
         <artifactId>flying-saucer-core</artifactId>
-        <version>${flying-saucer.version}</version>
+        <version>${org.xhtmlrenderer.flying-saucer.version}</version>
       </dependency>
       <dependency>
         <groupId>org.xhtmlrenderer</groupId>
         <artifactId>flying-saucer-pdf</artifactId>
-        <version>${flying-saucer.version}</version>
+        <version>${org.xhtmlrenderer.flying-saucer.version}</version>
       </dependency>
       <dependency>
         <groupId>org.xwiki.commons</groupId>
@@ -607,8 +607,7 @@
       <dependency>
         <groupId>stax</groupId>
         <artifactId>stax-api</artifactId>
-        <version>${stax-api.version}</version>
-        <scope>runtime</scope>
+        <version>${stax.stax-api.version}</version>
       </dependency>
       <dependency>
         <groupId>xerces</groupId>
