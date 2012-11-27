@@ -93,7 +93,7 @@
     <org.chromattic.version>1.1.4</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>1.7.6</org.codehaus.groovy.version>
-    <org.exoplatform.framework.junit.version>1.2.2-GA</org.exoplatform.framework.junit.version>
+    <org.exoplatform.framework.junit.version>1.2.3-GA</org.exoplatform.framework.junit.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.javassist.version>3.14.0-GA</org.javassist.version>
