@@ -385,6 +385,11 @@
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
+        <artifactId>juzu-builder</artifactId>
+        <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
         <version>${org.juzu.version}</version>
       </dependency>
