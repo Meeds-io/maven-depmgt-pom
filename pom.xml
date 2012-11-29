@@ -588,6 +588,11 @@
       </dependency>
       <dependency>
         <groupId>org.xcmis</groupId>
+        <artifactId>xcmis-renditions</artifactId>
+        <version>${org.xcmis.version}</version> 
+     </dependency>
+      <dependency>
+        <groupId>org.xcmis</groupId>
         <artifactId>xcmis-restatom</artifactId>
         <version>${org.xcmis.version}</version>
       </dependency>
