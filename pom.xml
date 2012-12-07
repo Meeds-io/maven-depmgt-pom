@@ -45,14 +45,17 @@
     <com.google.code.guice.version>2.0</com.google.code.guice.version>
     <com.google.guava.version>r09</com.google.guava.version>
     <com.google.gwt.version>2.4.0</com.google.gwt.version>
+    <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
     <com.googlecode.json-simple.version>1.1</com.googlecode.json-simple.version>
     <com.ibm.icu.version>3.8</com.ibm.icu.version>
     <com.itextpdf.version>5.3.1</com.itextpdf.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.smartgwt.version>2.5</com.smartgwt.version>
+    <com.sun.xml.stream.version>1.0.1</com.sun.xml.stream.version>
     <com.thoughtworks.xstream.version>1.3.1</com.thoughtworks.xstream.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
     <commons-chain.version>1.2</commons-chain.version>
+    <commons-codec.version>1.4</commons-codec.version>
     <commons-collections.version>3.2.1</commons-collections.version>
     <commons-fileupload.version>1.2.1</commons-fileupload.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
@@ -86,13 +89,16 @@
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
     <org.apache.poi.version>3.6</org.apache.poi.version>
     <org.apache.tika.version>0.7</org.apache.tika.version>
+    <org.apache.tomcat.version>7.0.33</org.apache.tomcat.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.6.11</org.aspectj.version>
+    <org.bouncycastle.version>1.45</org.bouncycastle.version>
     <org.chromattic.version>1.1.4</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>1.7.6</org.codehaus.groovy.version>
     <org.exoplatform.framework.junit.version>1.2.3-GA</org.exoplatform.framework.junit.version>
+    <org.hibernate.version>3.3.2.GA</org.hibernate.version>
     <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
     <org.icepdf.version>4.3.2</org.icepdf.version>
@@ -109,6 +115,7 @@
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
     <org.owasp.antisamy.version>1.4.5</org.owasp.antisamy.version>
+    <org.picketlink.idm.version>1.3.2.CR02</org.picketlink.idm.version>
     <org.slf4j.version>1.7.2</org.slf4j.version>
     <org.staxnav.version>0.9.6</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
@@ -148,6 +155,11 @@
         <version>${com.google.gwt.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.google.gwt.google-apis</groupId>
+        <artifactId>gwt-gadgets</artifactId>
+        <version>${com.google.gwt.google-apis.gwt-gadgets.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
         <version>${com.google.code.guice.version}</version>
@@ -177,6 +189,11 @@
         <artifactId>smartgwt</artifactId>
         <version>${com.smartgwt.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.sun.xml.stream</groupId>
+        <artifactId>sjsxp</artifactId>
+        <version>${com.sun.xml.stream.version}</version>
+      </dependency>
       <!-- Replace the old versions of xstream with new one under com.thoughtworks.xstream:xstream -->
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
@@ -192,6 +209,11 @@
         <groupId>commons-chain</groupId>
         <artifactId>commons-chain</artifactId>
         <version>${commons-chain.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-collections</groupId>
@@ -369,6 +391,11 @@
         <version>${org.apache.tika.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-catalina</artifactId>
+        <version>${org.apache.tomcat.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.ws.commons</groupId>
         <artifactId>ws-commons-util</artifactId>
         <version>${org.apache.ws.commons.version}</version>
@@ -382,6 +409,11 @@
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
         <version>${org.aspectj.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15</artifactId>
+        <version>${org.bouncycastle.version}</version>
       </dependency>
       <dependency>
         <groupId>org.chromattic</groupId>
@@ -405,7 +437,17 @@
       </dependency>
       <dependency>
         <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.dataobject</artifactId>
+        <version>${org.chromattic.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
         <artifactId>chromattic.ext</artifactId>
+        <version>${org.chromattic.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.groovy</artifactId>
         <version>${org.chromattic.version}</version>
       </dependency>
       <dependency>
@@ -452,6 +494,11 @@
         <groupId>org.exoplatform.tool</groupId>
         <artifactId>exo.tool.framework.junit</artifactId>
         <version>${org.exoplatform.framework.junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${org.hibernate.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
@@ -547,6 +594,26 @@
         <groupId>org.owasp.antisamy</groupId>
         <artifactId>antisamy</artifactId>
         <version>${org.owasp.antisamy.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketlink.idm</groupId>
+        <artifactId>picketlink-idm-api</artifactId>
+        <version>${org.picketlink.idm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketlink.idm</groupId>
+        <artifactId>picketlink-idm-core</artifactId>
+        <version>${org.picketlink.idm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketlink.idm</groupId>
+        <artifactId>picketlink-idm-hibernate</artifactId>
+        <version>${org.picketlink.idm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketlink.idm</groupId>
+        <artifactId>picketlink-idm-spi</artifactId>
+        <version>${org.picketlink.idm.version}</version>
       </dependency>
       <!-- Use SLF4J and not commons-logging -->
       <!-- commons-logging must be removed from dependencies -->
