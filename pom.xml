@@ -76,7 +76,7 @@
     <javax.validation.version>1.0.0.GA</javax.validation.version>
     <javax.ws.rs.version>1.0</javax.ws.rs.version>
     <javax.xml.bind.version>2.1</javax.xml.bind.version>
-    <javax.xml.stream.stax-api.version>1.0.1</javax.xml.stream.stax-api.version>
+    <javax.xml.stream.stax-api.version>1.0-2</javax.xml.stream.stax-api.version>
     <jdom.version>1.0</jdom.version>
     <joda-time.version>1.6</joda-time.version>
     <junit.version>4.11</junit.version>
