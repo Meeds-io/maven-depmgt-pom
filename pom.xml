@@ -23,7 +23,7 @@
     <artifactId>maven-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
     <version>9-alpha-3</version>
-    <relativePath />
+    <relativePath></relativePath>
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
   <version>2-SNAPSHOT</version>
@@ -642,6 +642,11 @@
         <artifactId>picketlink-idm-spi</artifactId>
         <version>${org.picketlink.idm.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.quartz-scheduler</groupId>
+        <artifactId>quartz</artifactId>
+        <version>${quartz.version}</version>
+      </dependency>
       <!-- Use SLF4J and not commons-logging -->
       <!-- commons-logging must be removed from dependencies -->
       <dependency>
@@ -887,11 +892,6 @@
         <groupId>picocontainer</groupId>
         <artifactId>picocontainer</artifactId>
         <version>${picocontainer.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>quartz</groupId>
-        <artifactId>quartz</artifactId>
-        <version>${quartz.version}</version>
       </dependency>
       <dependency>
         <groupId>rome</groupId>
