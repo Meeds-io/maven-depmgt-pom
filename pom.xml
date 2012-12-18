@@ -48,8 +48,8 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <com.google.code.guice.version>2.0</com.google.code.guice.version>
     <com.google.guava.version>r09</com.google.guava.version>
+    <com.google.code.guice.version>3.0</com.google.code.guice.version>
     <com.google.gwt.version>2.4.0</com.google.gwt.version>
     <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
     <com.googlecode.json-simple.version>1.1</com.googlecode.json-simple.version>
