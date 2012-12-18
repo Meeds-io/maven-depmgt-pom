@@ -330,7 +330,7 @@
         <version>${javax.xml.stream.stax-api.version}</version>
       </dependency>
       <dependency>
-        <groupId>jdom</groupId>
+        <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
         <version>${jdom.version}</version>
       </dependency>
