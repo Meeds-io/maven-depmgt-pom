@@ -83,20 +83,21 @@
     <javax.ws.rs.version>1.0</javax.ws.rs.version>
     <javax.xml.bind.version>2.1</javax.xml.bind.version>
     <javax.xml.stream.stax-api.version>1.0-2</javax.xml.stream.stax-api.version>
-    <jaxen.version>1.1.4</jaxen.version><!-- 1.1.3 used by jdom has some wrong dependencies --> 
+    <!-- 1.1.3 used by jdom has some wrong dependencies -->
+    <jaxen.version>1.1.4</jaxen.version>
     <jdom.version>1.1.2</jdom.version>
     <joda-time.version>1.6.2</joda-time.version>
     <junit.version>4.11</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <net.oauth.core.version>20100527</net.oauth.core.version>
-    <net.sourceforge.cssparser.version>0.9.5</net.sourceforge.cssparser.version>
+    <net.sourceforge.cssparser.version>0.9.7</net.sourceforge.cssparser.version>
     <net.sourceforge.nekohtml.version>1.9.14</net.sourceforge.nekohtml.version>
     <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.jackrabbit.version>1.6.4</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.5.0</org.apache.lucene.version>
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
     <org.apache.poi.version>3.6</org.apache.poi.version>
-    <org.apache.tika.version>1.1</org.apache.tika.version>
+    <org.apache.tika.version>1.2</org.apache.tika.version>
     <org.apache.tomcat.version>7.0.33</org.apache.tomcat.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
@@ -131,6 +132,7 @@
     <org.staxnav.version>0.9.6</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.testng.version>6.8</org.testng.version>
+    <org.w3c.sac.version>1.3</org.w3c.sac.version>
     <org.wikimodel.version>2.0.7-SNAP-rev-532</org.wikimodel.version>
     <org.xcmis.version>1.2.2</org.xcmis.version>
     <org.xhtmlrenderer.flying-saucer.version>9.0.1</org.xhtmlrenderer.flying-saucer.version>
@@ -336,11 +338,6 @@
         <version>${jaxen.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.jdom</groupId>
-        <artifactId>jdom</artifactId>
-        <version>${jdom.version}</version>
-      </dependency>
-      <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
         <version>${joda-time.version}</version>
@@ -408,6 +405,11 @@
       <dependency>
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-core</artifactId>
+        <version>${org.apache.tika.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tika</groupId>
+        <artifactId>tika-parsers</artifactId>
         <version>${org.apache.tika.version}</version>
       </dependency>
       <dependency>
@@ -596,6 +598,11 @@
         <version>${org.jboss.javaee.jboss-transaction-api.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.jdom</groupId>
+        <artifactId>jdom</artifactId>
+        <version>${jdom.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.jibx</groupId>
         <artifactId>jibx-run</artifactId>
         <version>${org.jibx.version}</version>
@@ -725,6 +732,11 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>${org.testng.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.w3c</groupId>
+        <artifactId>sac</artifactId>
+        <version>${org.w3c.sac.version}</version>
       </dependency>
       <dependency>
         <groupId>org.wikimodel</groupId>
