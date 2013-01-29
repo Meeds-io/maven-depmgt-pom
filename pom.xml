@@ -77,7 +77,7 @@
     <javax.jcr.version>1.0</javax.jcr.version>
     <javax.mail.version>1.4.4</javax.mail.version>
     <javax.portlet.version>2.0</javax.portlet.version>
-    <javax.servlet.version>2.5</javax.servlet.version>
+    <javax.servlet.version>3.0.1</javax.servlet.version>
     <javax.transaction.version>1.1</javax.transaction.version>
     <javax.validation.version>1.0.0.GA</javax.validation.version>
     <javax.ws.rs.version>1.0</javax.ws.rs.version>
@@ -303,8 +303,15 @@
         <version>${javax.portlet.version}</version>
       </dependency>
       <dependency>
+        <!-- TODO : remove this artifact and update all eXo Project to replace it by javax.servlet-api -->
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <!-- was <artifactId>servlet-api</artifactId> in servlet 2.5 -->
         <version>${javax.servlet.version}</version>
       </dependency>
       <dependency>
