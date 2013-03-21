@@ -22,7 +22,7 @@
   <parent>
     <artifactId>maven-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>9-beta-1</version>
+    <version>9-SNAPSHOT</version>
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
@@ -50,7 +50,7 @@
     <!-- **************************************** -->
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
     <com.google.guava.version>11.0.2</com.google.guava.version>
-    <com.google.gwt.version>2.5.0</com.google.gwt.version>
+    <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
     <com.googlecode.json-simple.version>1.1</com.googlecode.json-simple.version>
     <com.ibm.icu.version>3.8</com.ibm.icu.version>
