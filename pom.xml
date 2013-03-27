@@ -48,6 +48,7 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
+    <ch.qas.logback.version>1.0.11</ch.qas.logback.version>
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
     <com.google.guava.version>11.0.2</com.google.guava.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
