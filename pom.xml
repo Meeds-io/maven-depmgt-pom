@@ -128,7 +128,7 @@
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
     <org.owasp.antisamy.version>1.4.5</org.owasp.antisamy.version>
     <org.picketlink.idm.version>1.4.0.Final</org.picketlink.idm.version>
-    <org.slf4j.version>1.7.2</org.slf4j.version>
+    <org.slf4j.version>1.7.5</org.slf4j.version>
     <org.staxnav.version>0.9.6</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.testng.version>6.8</org.testng.version>
