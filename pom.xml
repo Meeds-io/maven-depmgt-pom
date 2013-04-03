@@ -99,7 +99,6 @@
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
     <org.apache.poi.version>3.8</org.apache.poi.version>
     <org.apache.tika.version>1.1</org.apache.tika.version>
-    <org.apache.tomcat.version>7.0.39</org.apache.tomcat.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.6.11</org.aspectj.version>
@@ -419,11 +418,6 @@
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-parsers</artifactId>
         <version>${org.apache.tika.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-catalina</artifactId>
-        <version>${org.apache.tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.ws.commons</groupId>
