@@ -101,7 +101,7 @@
     <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.6.11</org.aspectj.version>
     <org.bouncycastle.version>1.45</org.bouncycastle.version>
-    <org.chromattic.version>1.2.3</org.chromattic.version>
+    <org.chromattic.version>1.2.4</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>1.7.6</org.codehaus.groovy.version>
     <org.easymock.version>2.0</org.easymock.version>
