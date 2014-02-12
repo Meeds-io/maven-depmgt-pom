@@ -94,7 +94,7 @@
     <net.sourceforge.nekohtml.version>1.9.20</net.sourceforge.nekohtml.version>
     <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
-    <org.apache.lucene.version>3.5.0</org.apache.lucene.version>
+    <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
     <org.apache.poi.version>3.8</org.apache.poi.version>
     <!-- Apache POI OOXML 3.8-eXo01. To remove when Platform uses eXo JCR 1.16.x -->
