@@ -116,7 +116,7 @@
     <org.javassist.version>3.14.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.javaee.jboss-transaction-api.version>1.0.1.GA</org.jboss.javaee.jboss-transaction-api.version>
-    <org.jboss.jboss-commons.version>2.2.9.GA</org.jboss.jboss-commons.version>
+    <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
