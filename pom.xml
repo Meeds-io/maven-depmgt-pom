@@ -99,7 +99,7 @@
     <org.apache.tika.version>1.1</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
-    <org.aspectj.version>1.6.11</org.aspectj.version>
+    <org.aspectj.version>1.6.12</org.aspectj.version>
     <org.bouncycastle.version>1.45</org.bouncycastle.version>
     <org.chromattic.version>1.2.5</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
