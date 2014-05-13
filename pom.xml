@@ -106,7 +106,7 @@
     <org.codehaus.groovy.version>1.7.11</org.codehaus.groovy.version>
     <org.easymock.version>2.0</org.easymock.version>
     <org.exoplatform.framework.junit.version>1.2.3-GA</org.exoplatform.framework.junit.version>
-    <org.hibernate.common.hibernate-commons-annotations.version>4.0.1.Final</org.hibernate.common.hibernate-commons-annotations.version>
+    <org.hibernate.common.hibernate-commons-annotations.version>4.0.4.Final</org.hibernate.common.hibernate-commons-annotations.version>
     <org.hibernate.hibernate-annotations.version>3.3.1.GA</org.hibernate.hibernate-annotations.version>
     <org.hibernate.hibernate-core.version>4.1.6.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
