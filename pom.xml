@@ -103,7 +103,7 @@
     <org.bouncycastle.version>1.45</org.bouncycastle.version>
     <org.chromattic.version>1.2.5</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
-    <org.codehaus.groovy.version>1.7.6</org.codehaus.groovy.version>
+    <org.codehaus.groovy.version>1.7.11</org.codehaus.groovy.version>
     <org.easymock.version>2.0</org.easymock.version>
     <org.exoplatform.framework.junit.version>1.2.3-GA</org.exoplatform.framework.junit.version>
     <org.hibernate.common.hibernate-commons-annotations.version>4.0.1.Final</org.hibernate.common.hibernate-commons-annotations.version>
