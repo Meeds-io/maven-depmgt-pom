@@ -54,7 +54,7 @@
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
     <com.googlecode.json-simple.version>1.1</com.googlecode.json-simple.version>
-    <com.ibm.icu.version>3.8</com.ibm.icu.version>
+    <com.ibm.icu.version>3.8.1</com.ibm.icu.version>
     <com.itextpdf.version>5.3.4</com.itextpdf.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.smartgwt.version>2.5</com.smartgwt.version>
