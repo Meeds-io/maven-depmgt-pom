@@ -53,7 +53,7 @@
     <com.google.guava.version>11.0.2</com.google.guava.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
-    <com.googlecode.json-simple.version>1.1</com.googlecode.json-simple.version>
+    <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.ibm.icu.version>3.8.1</com.ibm.icu.version>
     <com.itextpdf.version>5.3.4</com.itextpdf.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
@@ -178,6 +178,13 @@
         <groupId>com.googlecode.json-simple</groupId>
         <artifactId>json-simple</artifactId>
         <version>${com.googlecode.json-simple.version}</version>
+        <exclusions>
+          <!-- This is an error in 1.1.1 reported here : https://code.google.com/p/json-simple/issues/detail?id=91 -->
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.ibm.icu</groupId>
