@@ -108,7 +108,7 @@
     <org.exoplatform.framework.junit.version>1.2.4-GA</org.exoplatform.framework.junit.version>
     <org.hibernate.common.hibernate-commons-annotations.version>4.0.4.Final</org.hibernate.common.hibernate-commons-annotations.version>
     <org.hibernate.hibernate-annotations.version>3.3.1.GA</org.hibernate.hibernate-annotations.version>
-    <org.hibernate.hibernate-core.version>4.1.6.Final</org.hibernate.hibernate-core.version>
+    <org.hibernate.hibernate-core.version>4.1.12.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
     <org.icepdf.version>4.3.2</org.icepdf.version>
@@ -537,6 +537,11 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
+        <version>${org.hibernate.hibernate-core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-c3p0</artifactId>
         <version>${org.hibernate.hibernate-core.version}</version>
       </dependency>
       <dependency>
