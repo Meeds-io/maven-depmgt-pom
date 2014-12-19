@@ -111,7 +111,7 @@
     <org.hibernate.hibernate-core.version>4.1.12.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
-    <org.icepdf.version>4.3.2</org.icepdf.version>
+    <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.javassist.version>3.14.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
@@ -560,7 +560,7 @@
         <version>${org.hsqldb.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.icepdf</groupId>
+        <groupId>org.icepdf.os</groupId>
         <artifactId>icepdf-core</artifactId>
         <version>${org.icepdf.version}</version>
       </dependency>
