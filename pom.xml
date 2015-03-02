@@ -120,7 +120,7 @@
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
-    <org.juzu.version>0.6.2</org.juzu.version>
+    <org.juzu.version>1.0.0-cr2-SNAPSHOT</org.juzu.version>
     <org.mockito.version>1.8.5</org.mockito.version>
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
@@ -613,11 +613,6 @@
         <groupId>org.json</groupId>
         <artifactId>json</artifactId>
         <version>${org.json.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-bom-core</artifactId>
-        <version>${org.juzu.version}</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
