@@ -100,7 +100,7 @@
     <org.apache.poi-ooxml.version>3.8-eXo01</org.apache.poi-ooxml.version>
     <org.apache.tika.version>1.1</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
-    <org.artofsolving.jodconverter.version>3.0-SNAP-rev-220</org.artofsolving.jodconverter.version>
+    <org.artofsolving.jodconverter.version>3.0-eXo01</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.6.12</org.aspectj.version>
     <org.bouncycastle.version>1.45</org.bouncycastle.version>
     <org.chromattic.version>1.2.5</org.chromattic.version>
@@ -122,7 +122,7 @@
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
-    <org.juzu.version>1.0.0-cr2</org.juzu.version>
+    <org.juzu.version>1.0.x-SNAPSHOT</org.juzu.version>
     <org.mockito.version>1.8.5</org.mockito.version>
     <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
     <org.mortbay.jetty.version>0.9.20080221</org.mortbay.jetty.version>
@@ -854,11 +854,6 @@
         <version>${org.xwiki.platform.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.xwiki.commons</groupId>
-        <artifactId>xwiki-commons-environment-standard</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-gwt-dom</artifactId>
         <version>${org.xwiki.platform.version}</version>
@@ -875,42 +870,12 @@
       </dependency>
       <dependency>
         <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-cache-infinispan</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-formula-renderer</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>      
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-rendering-macro-code</artifactId>
         <version>${org.xwiki.platform.version}</version>
       </dependency>
       <dependency>
         <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-chart-macro</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-rendering-macro-rss</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-formula-macro</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-rendering-macro-cache</artifactId>
-        <version>${org.xwiki.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-office-macro</artifactId>
         <version>${org.xwiki.platform.version}</version>
       </dependency>
       <dependency>
