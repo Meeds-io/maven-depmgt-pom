@@ -116,7 +116,7 @@
     <org.hsqldb.version>2.0.0</org.hsqldb.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
-    <org.infinispan.version>5.1.8.Final</org.infinispan.version>
+    <org.infinispan.version>5.2.9.Final</org.infinispan.version>
     <org.javassist.version>3.14.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
