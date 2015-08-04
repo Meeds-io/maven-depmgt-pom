@@ -185,8 +185,8 @@
         <exclusions>
           <!-- This is an error in 1.1.1 reported here : https://code.google.com/p/json-simple/issues/detail?id=91 -->
           <exclusion>
-            <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -589,8 +589,8 @@
         <version>${org.infinispan.version}</version>
         <exclusions>
           <exclusion>
-            <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -959,7 +959,7 @@
         <groupId>org.xwiki.rendering</groupId>
         <artifactId>xwiki-rendering-syntax-plain</artifactId>
         <version>${org.xwiki.platform.version}</version>
-      </dependency>      
+      </dependency>
       <dependency>
         <groupId>org.xwiki.rendering</groupId>
         <artifactId>xwiki-rendering-syntax-wikimodel</artifactId>
@@ -999,7 +999,7 @@
         <groupId>org.xwiki.rendering</groupId>
         <artifactId>xwiki-rendering-macro-content</artifactId>
         <version>${org.xwiki.platform.version}</version>
-      </dependency>      
+      </dependency>
       <dependency>
         <groupId>org.xwiki.rendering</groupId>
         <artifactId>xwiki-rendering-wikimodel</artifactId>
