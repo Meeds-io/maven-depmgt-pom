@@ -96,10 +96,9 @@
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
-    <org.apache.poi.version>3.8</org.apache.poi.version>
-    <!-- Apache POI OOXML 3.8-eXo01. To remove when Platform uses eXo JCR 1.16.x -->
-    <org.apache.poi-ooxml.version>3.8-eXo01</org.apache.poi-ooxml.version>
-    <org.apache.tika.version>1.4</org.apache.tika.version>
+    <org.apache.poi.version>3.10.1</org.apache.poi.version>
+    <org.apache.poi-ooxml.version>3.10.1</org.apache.poi-ooxml.version>
+    <org.apache.tika.version>1.5</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-eXo02</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.8.6</org.aspectj.version>
