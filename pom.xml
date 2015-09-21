@@ -125,6 +125,7 @@
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
     <org.juzu.version>1.1.0-M1</org.juzu.version>
+    <org.liquibase.version>3.4.1</org.liquibase.version>
     <org.mockito.version>1.8.5</org.mockito.version>
     <org.owasp.antisamy.version>1.4.5</org.owasp.antisamy.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
@@ -697,6 +698,11 @@
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-upload</artifactId>
         <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+        <version>${org.liquibase.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
