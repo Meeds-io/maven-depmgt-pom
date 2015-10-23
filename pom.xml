@@ -116,7 +116,7 @@
     <org.hibernate.hibernate-core.version>4.1.12.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-entitymanager.version>4.1.12.Final</org.hibernate.hibernate-entitymanager.version>
     <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
-    <org.hsqldb.version>2.0.0</org.hsqldb.version>
+    <org.hsqldb.version>2.3.3</org.hsqldb.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.infinispan.version>5.2.9.Final</org.infinispan.version>
