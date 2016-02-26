@@ -100,7 +100,7 @@
     <org.apache.pdfbox.version>1.7.1</org.apache.pdfbox.version>
     <org.apache.poi.version>3.13</org.apache.poi.version>
     <org.apache.poi-ooxml.version>3.13</org.apache.poi-ooxml.version>
-    <org.apache.tika.version>1.5</org.apache.tika.version>
+    <org.apache.tika.version>1.12</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.8.6</org.aspectj.version>
