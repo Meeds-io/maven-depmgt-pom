@@ -91,7 +91,7 @@
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <net.oauth.core.version>20100527</net.oauth.core.version>
-    <net.sourceforge.cssparser.version>0.9.14</net.sourceforge.cssparser.version>
+    <net.sourceforge.cssparser.version>0.9.18</net.sourceforge.cssparser.version>
     <net.sourceforge.nekohtml.version>1.9.20</net.sourceforge.nekohtml.version>
     <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
