@@ -59,6 +59,7 @@
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
     <com.smartgwt.version>4.0</com.smartgwt.version>
+    <com.sun.mail.version>1.5.5</com.sun.mail.version>
     <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
     <com.thoughtworks.xstream.version>1.4.8</com.thoughtworks.xstream.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
@@ -76,7 +77,6 @@
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.jcr.version>1.0.1</javax.jcr.version>
-    <javax.mail.version>1.4.7</javax.mail.version>
     <javax.portlet.version>2.0</javax.portlet.version>
     <javax.servlet.version>3.0.1</javax.servlet.version>
     <javax.transaction.version>1.1</javax.transaction.version>
@@ -305,9 +305,9 @@
         <version>${javax.jcr.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.mail</groupId>
+        <groupId>com.sun.mail</groupId>
         <artifactId>mail</artifactId>
-        <version>${javax.mail.version}</version>
+        <version>${com.sun.mail.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.portlet</groupId>
