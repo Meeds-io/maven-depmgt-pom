@@ -52,7 +52,6 @@
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
     <com.google.guava.version>11.0.2</com.google.guava.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
-    <com.google.gwt.google-apis.gwt-gadgets.version>1.2.0</com.google.gwt.google-apis.gwt-gadgets.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.ibm.icu.version>56.1</com.ibm.icu.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
@@ -168,11 +167,6 @@
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
         <version>${com.google.gwt.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.gwt.google-apis</groupId>
-        <artifactId>gwt-gadgets</artifactId>
-        <version>${com.google.gwt.google-apis.gwt-gadgets.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject</groupId>
