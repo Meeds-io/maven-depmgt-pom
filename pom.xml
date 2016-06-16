@@ -53,6 +53,7 @@
     <com.google.guava.version>11.0.2</com.google.guava.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
+    <com.googlecode.owasp-java-html-sanitizer.version>20160413.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.ibm.icu.version>56.1</com.ibm.icu.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
@@ -130,7 +131,6 @@
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
     <org.ogce.xpp3.version>1.1.6</org.ogce.xpp3.version>
-    <org.owasp.antisamy.version>1.5.3</org.owasp.antisamy.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.slf4j.version>1.7.18</org.slf4j.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
@@ -184,6 +184,11 @@
             <groupId>junit</groupId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+        <artifactId>owasp-java-html-sanitizer</artifactId>
+        <version>${com.googlecode.owasp-java-html-sanitizer.version}</version>
       </dependency>
       <dependency>
         <groupId>com.ibm.icu</groupId>
@@ -733,11 +738,6 @@
         <groupId>org.ogce</groupId>
         <artifactId>xpp3</artifactId>
         <version>${org.ogce.xpp3.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.owasp.antisamy</groupId>
-        <artifactId>antisamy</artifactId>
-        <version>${org.owasp.antisamy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.picketlink.idm</groupId>
