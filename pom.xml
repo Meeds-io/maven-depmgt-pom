@@ -584,6 +584,12 @@
         <version>${org.elasticsearch.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.elasticsearch.distribution.zip</groupId>
+        <artifactId>elasticsearch</artifactId>
+        <version>${org.elasticsearch.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
         <groupId>org.elasticsearch.plugin</groupId>
         <artifactId>mapper-attachments</artifactId>
         <version>${org.elasticsearch.version}</version>
