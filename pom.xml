@@ -594,6 +594,16 @@
         <artifactId>ingest-attachment</artifactId>
         <version>${org.elasticsearch.version}</version>
       </dependency>
+	  <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>reindex-client</artifactId>
+        <version>${org.elasticsearch.version}</version>
+	  </dependency>
+	  <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>transport-netty4-client</artifactId>
+        <version>${org.elasticsearch.version}</version>
+	  </dependency>
       <dependency>
         <groupId>org.exoplatform.tool</groupId>
         <artifactId>exo.tool.framework.junit</artifactId>
