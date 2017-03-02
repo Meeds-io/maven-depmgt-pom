@@ -591,12 +591,7 @@
       </dependency>
       <dependency>
         <groupId>org.elasticsearch.plugin</groupId>
-        <artifactId>mapper-attachments</artifactId>
-        <version>${org.elasticsearch.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.elasticsearch.plugin</groupId>
-        <artifactId>delete-by-query</artifactId>
+        <artifactId>ingest-attachment</artifactId>
         <version>${org.elasticsearch.version}</version>
       </dependency>
       <dependency>
