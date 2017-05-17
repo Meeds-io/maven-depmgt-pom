@@ -50,7 +50,8 @@
     <!-- **************************************** -->
     <ch.qas.logback.version>1.0.11</ch.qas.logback.version>
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
-    <com.google.guava.version>11.0.2</com.google.guava.version>
+    <com.google.guava.version>18.0</com.google.guava.version>
+    <com.google.javascript.version>v20131014</com.google.javascript.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20160413.1</com.googlecode.owasp-java-html-sanitizer.version>
@@ -151,6 +152,11 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${com.google.guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.javascript</groupId>
+        <artifactId>closure-compiler</artifactId>
+        <version>${com.google.javascript.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.gwt</groupId>
