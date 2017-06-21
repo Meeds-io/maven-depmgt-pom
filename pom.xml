@@ -61,7 +61,7 @@
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
     <com.sun.mail.version>1.5.5</com.sun.mail.version>
     <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
-    <com.thoughtworks.xstream.version>1.4.8</com.thoughtworks.xstream.version>
+    <com.thoughtworks.xstream.version>1.4.10</com.thoughtworks.xstream.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
     <commons-chain.version>1.2</commons-chain.version>
     <commons-codec.version>1.10</commons-codec.version>
