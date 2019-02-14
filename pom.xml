@@ -26,14 +26,14 @@
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
-  <version>15-SNAPSHOT</version>
+  <version>15-RC04</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-depmgt-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-depmgt-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>15-RC04</tag>
     <url>https://github.com/exoplatform/maven-depmgt-pom</url>
   </scm>
   <properties>
