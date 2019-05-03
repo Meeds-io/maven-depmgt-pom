@@ -434,6 +434,11 @@
         <version>${org.apache.tika.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.drewnoakes</groupId>
+        <artifactId>metadata-extractor</artifactId>
+        <version>${com.drewnoakes.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.ws.commons</groupId>
         <artifactId>ws-commons-util</artifactId>
         <version>${org.apache.ws.commons.version}</version>
