@@ -73,7 +73,7 @@
     <dom4j.version>1.6.1</dom4j.version>
     <ecs.version>1.4.2</ecs.version>
     <ical4j.version>1.0-beta5</ical4j.version>
-    <io.swagger.version>1.5.0</io.swagger.version>
+    <io.swagger.version>1.5.22</io.swagger.version>
     <javax.activation.version>1.1.1</javax.activation.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
