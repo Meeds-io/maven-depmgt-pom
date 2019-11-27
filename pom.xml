@@ -61,6 +61,7 @@
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
     <com.sun.mail.version>1.5.5</com.sun.mail.version>
     <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
+    <com.sun.xml.jersey-client.version>1.12</com.sun.xml.jersey-client.version>
     <com.thoughtworks.xstream.version>1.4.10</com.thoughtworks.xstream.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
     <commons-chain.version>1.2</commons-chain.version>
@@ -89,6 +90,7 @@
     <jdom.version>1.1.3</jdom.version>
     <jgroups.version>3.6.13.Final</jgroups.version>
     <junit.version>4.12</junit.version>
+    <jmock.version>1.0.1</jmock.version>
     <log4j.version>1.2.17</log4j.version>
     <net.java.dev.jna>4.1.0</net.java.dev.jna>
     <net.oauth.core.version>20100527</net.oauth.core.version>
@@ -96,6 +98,7 @@
     <net.sourceforge.nekohtml.version>1.9.22</net.sourceforge.nekohtml.version>
     <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
+    <org.apache.httpcomponents.httpcore.version>4.4.5</org.apache.httpcomponents.httpcore.version>
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>1.8.14</org.apache.pdfbox.version>
@@ -124,6 +127,7 @@
     <org.javassist.version>3.20.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
+    <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
@@ -131,6 +135,7 @@
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
     <org.powermock.version>1.6.5</org.powermock.version>
+    <org.easymock.version>2.5</org.easymock.version>
     <org.ogce.xpp3.version>1.1.6</org.ogce.xpp3.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.slf4j.version>1.7.18</org.slf4j.version>
@@ -141,11 +146,13 @@
     <org.xcmis.version>1.3.0</org.xcmis.version>
     <org.xhtmlrenderer.flying-saucer.version>9.0.8</org.xhtmlrenderer.flying-saucer.version>
     <org.xwiki.platform.version>5.4.7</org.xwiki.platform.version>
+    <portals-bridges.version>1.0.4</portals-bridges.version>
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>2.2.2</quartz.version>
     <rome.version>1.0</rome.version>
     <xerces.version>2.9.1</xerces.version>
     <xpp3.version>1.1.4c</xpp3.version>
+    <javax.ccpp.version>1.0</javax.ccpp.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -220,6 +227,11 @@
         <groupId>com.sun.xml.stream</groupId>
         <artifactId>sjsxp</artifactId>
         <version>${com.sun.xml.stream.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.sun.jersey</groupId>
+          <artifactId>jersey-client</artifactId>
+          <version>${com.sun.xml.jersey-client.version}</version>
       </dependency>
       <!-- Replace the old versions of xstream with new one under com.thoughtworks.xstream:xstream -->
       <dependency>
@@ -344,9 +356,19 @@
         <version>${javax.xml.stream.stax-api.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.ccpp</groupId>
+        <artifactId>ccpp</artifactId>
+        <version>${javax.ccpp.version}</version>
+      </dependency>
+      <dependency>
         <groupId>jaxen</groupId>
         <artifactId>jaxen</artifactId>
         <version>${jaxen.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jmock</groupId>
+        <artifactId>jmock</artifactId>
+        <version>${jmock.version}</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
@@ -392,6 +414,16 @@
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
         <version>${org.apache.httpcomponents.httpclient.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>${org.apache.httpcomponents.httpcore.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.portals.bridges</groupId>
+        <artifactId>portals-bridges-common</artifactId>
+        <version>${portals-bridges.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
@@ -687,6 +719,11 @@
         <version>${org.jboss.jboss-commons.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>${org.jboss.jboss-logging.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.jboss.byteman</groupId>
         <artifactId>byteman</artifactId>
         <version>${org.jboss.byteman.version}</version>
@@ -780,6 +817,16 @@
         <groupId>org.powermock</groupId>
         <artifactId>powermock-api-mockito</artifactId>
         <version>${org.powermock.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-api-easymock</artifactId>
+        <version>${org.powermock.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <version>${org.easymock.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ogce</groupId>
