@@ -96,6 +96,7 @@
     <net.oauth.core.version>20100527</net.oauth.core.version>
     <net.sourceforge.cssparser.version>0.9.18</net.sourceforge.cssparser.version>
     <net.sourceforge.nekohtml.version>1.9.22</net.sourceforge.nekohtml.version>
+    <net.sourceforge.htmlcleaner.version>2.7</net.sourceforge.htmlcleaner.version>
     <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
     <org.apache.httpcomponents.httpcore.version>4.4.5</org.apache.httpcomponents.httpcore.version>
@@ -426,6 +427,11 @@
         <groupId>net.sourceforge.nekohtml</groupId>
         <artifactId>nekohtml</artifactId>
         <version>${net.sourceforge.nekohtml.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sourceforge.htmlcleaner</groupId>
+        <artifactId>htmlcleaner</artifactId>
+        <version>${net.sourceforge.htmlcleaner.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
