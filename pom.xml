@@ -133,6 +133,7 @@
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
     <org.juzu.version>1.2.x-SNAPSHOT</org.juzu.version>
+    <org.less4j.version>1.4.0</org.less4j.version>
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
     <org.powermock.version>1.6.5</org.powermock.version>
@@ -827,6 +828,11 @@
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-less4j</artifactId>
         <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sommeri</groupId>
+        <artifactId>less4j</artifactId>
+        <version>${org.less4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
