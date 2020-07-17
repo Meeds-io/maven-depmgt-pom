@@ -119,7 +119,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.hibernate.common.hibernate-commons-annotations.version>4.0.5.Final</org.hibernate.common.hibernate-commons-annotations.version>
     <org.hibernate.hibernate-core.version>4.2.21.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-entitymanager.version>4.2.21.Final</org.hibernate.hibernate-entitymanager.version>
-    <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
+    <org.hibernate.hibernate-validator.version>5.3.5.Final</org.hibernate.hibernate-validator.version>
     <org.hsqldb.version>2.4.0</org.hsqldb.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
