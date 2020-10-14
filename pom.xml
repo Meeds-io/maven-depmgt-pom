@@ -124,6 +124,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.infinispan.version>8.2.6.Final</org.infinispan.version>
+    <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
+    <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
     <org.javassist.version>3.20.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
@@ -741,6 +743,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.imgscalr</groupId>
         <artifactId>imgscalr-lib</artifactId>
         <version>${org.imgscalr.version}</version>
+      </dependency>
+      <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
+      <dependency>
+        <groupId>org.jboss.marshalling</groupId>
+        <artifactId>jboss-marshalling-osgi</artifactId>
+        <version>${org.jboss.marshalling.version}</version>
       </dependency>
       <dependency>
         <groupId>org.infinispan</groupId>
