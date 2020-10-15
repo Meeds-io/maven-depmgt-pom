@@ -133,7 +133,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
-    <org.juzu.version>1.2.x-SNAPSHOT</org.juzu.version>
+    <org.juzu.version>1.2.0</org.juzu.version>
     <org.less4j.version>1.4.0</org.less4j.version>
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
