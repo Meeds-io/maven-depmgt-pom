@@ -61,7 +61,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.sun.mail.version>1.5.5</com.sun.mail.version>
     <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
     <com.sun.xml.jersey-client.version>1.12</com.sun.xml.jersey-client.version>
-    <com.thoughtworks.xstream.version>1.4.10</com.thoughtworks.xstream.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
     <commons-chain.version>1.2</commons-chain.version>
     <commons-codec.version>1.10</commons-codec.version>
@@ -235,18 +234,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
           <groupId>com.sun.jersey</groupId>
           <artifactId>jersey-client</artifactId>
           <version>${com.sun.xml.jersey-client.version}</version>
-      </dependency>
-      <!-- Replace the old versions of xstream with new one under com.thoughtworks.xstream:xstream -->
-      <dependency>
-        <groupId>com.thoughtworks.xstream</groupId>
-        <artifactId>xstream</artifactId>
-        <version>${com.thoughtworks.xstream.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>xpp3</groupId>
-            <artifactId>xpp3_min</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.totsp.feedpod</groupId>
@@ -1341,6 +1328,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>picocontainer</groupId>
         <artifactId>picocontainer</artifactId>
         <version>${picocontainer.version}</version>
+        <exclusions>
+          <exclusion>
+            <!-- xstream dependency is an old version (1.0.2)
+            when trying to update version for xstream for security reason,
+            it seems that xstream in picocontainer is used for test purpose,
+            so we exclude the dependency-->
+            <groupId>xstream</groupId>
+            <artifactId>xstream</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>rome</groupId>
