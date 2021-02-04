@@ -100,10 +100,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.apache.httpcomponents.httpcore.version>4.4.5</org.apache.httpcomponents.httpcore.version>
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
-    <org.apache.pdfbox.version>1.8.14</org.apache.pdfbox.version>
-    <org.apache.poi.version>3.13</org.apache.poi.version>
-    <org.apache.poi-ooxml.version>3.13</org.apache.poi-ooxml.version>
-    <org.apache.tika.version>1.5</org.apache.tika.version>
+    <org.apache.pdfbox.version>2.0.15</org.apache.pdfbox.version>
+    <org.apache.poi.version>4.1.2</org.apache.poi.version>
+    <org.apache.tika.version>1.25</org.apache.tika.version>
+    <org.apache.xmlbeans.version>3.1.0</org.apache.xmlbeans.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.8.8</org.aspectj.version>
@@ -482,7 +482,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-ooxml</artifactId>
-        <version>${org.apache.poi-ooxml.version}</version>
+        <version>${org.apache.poi.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
@@ -503,6 +503,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.apache.ws.commons</groupId>
         <artifactId>ws-commons-util</artifactId>
         <version>${org.apache.ws.commons.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.xmlbeans</groupId>
+        <artifactId>xmlbeans</artifactId>
+        <version>${org.apache.xmlbeans.version}</version>
       </dependency>
       <dependency>
         <groupId>org.artofsolving.jodconverter</groupId>
