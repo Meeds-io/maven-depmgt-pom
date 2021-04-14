@@ -101,7 +101,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>1.8.14</org.apache.pdfbox.version>
-    <org.apache.poi.version>3.13</org.apache.poi.version>
+    <org.apache.poi.version>5.0.0</org.apache.poi.version>
     <org.apache.poi-ooxml.version>3.13</org.apache.poi-ooxml.version>
     <org.apache.tika.version>1.5</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
