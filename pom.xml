@@ -190,6 +190,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.jackson.core>1.9.9</version.jackson.core>
+    <org.lombok.version>1.18.2</org.lombok.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -1658,6 +1659,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
             <artifactId>slf4j-simple</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${org.lombok.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
