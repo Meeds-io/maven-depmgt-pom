@@ -79,7 +79,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.inject.version>1</javax.inject.version>
     <javax.jcr.version>1.0</javax.jcr.version>
     <javax.portlet.version>2.0</javax.portlet.version>
-    <javax.servlet.version>3.0.1</javax.servlet.version>
+    <javax.servlet.version>3.1.0</javax.servlet.version>
+    <javax.servlet.jsp.version>2.3.1</javax.servlet.jsp.version>
     <javax.transaction.version>1.1</javax.transaction.version>
     <javax.validation.version>1.1.0.Final</javax.validation.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
@@ -179,6 +180,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.htmlparser>2.1</version.htmlparser>
     <version.jsecurity>0.9.0</version.jsecurity>
     <version.apache.xerces>2.9.1</version.apache.xerces>
+    <version.xml-apis>1.4.01</version.xml-apis>
     <version.apache.sanselan>0.97-incubator</version.apache.sanselan>
     <version.apache.commons-beanutils>1.8.3</version.apache.commons-beanutils>
     <version.apache.commons-pool>1.6</version.apache.commons-pool>
@@ -195,11 +197,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jackson.core>1.9.9</version.jackson.core>
     <org.lombok.version>1.18.2</org.lombok.version>
     <org.gatein.common.version>2.2.2.Final</org.gatein.common.version>
-   <!-- For testing only -->
-   <version.arquillian>1.1.12.Final</version.arquillian>
-   <version.arquillian.tomcat>1.0.0</version.arquillian.tomcat>
-   <version.shrinkwrap>1.2.6</version.shrinkwrap>
-   <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
+    <!-- 3rd party deprecated libraries versions -->
+    <org.ow2.jotm.version>2.1.9</org.ow2.jotm.version>
+    <ow2-jta-1.1-spec.version>1.0.13</ow2-jta-1.1-spec.version>
+    <transactions-jta.version>3.8.0</transactions-jta.version>
+    <com.experlog.xapool.version>1.5.0</com.experlog.xapool.version>
+    <!-- For testing only -->
+    <version.arquillian>1.1.12.Final</version.arquillian>
+    <version.arquillian.tomcat>1.0.0</version.arquillian.tomcat>
+    <version.shrinkwrap>1.2.6</version.shrinkwrap>
+    <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
     <tomcat8.version>8.5.55</tomcat8.version>
   </properties>
@@ -444,7 +451,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>${javax.servlet.version}</version>
-        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>${javax.servlet.jsp.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.resource</groupId>
@@ -544,6 +555,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.htmlparser</groupId>
         <artifactId>htmllexer</artifactId>
+        <version>${version.htmlparser}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.htmlparser</groupId>
+        <artifactId>htmlparser</artifactId>
         <version>${version.htmlparser}</version>
       </dependency>
       <dependency>
@@ -1605,6 +1621,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${version.apache.xerces}</version>
       </dependency>
       <dependency>
+        <groupId>xml-apis</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${version.xml-apis}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>caja</groupId>
         <artifactId>caja</artifactId>
         <version>${version.caja.caja}</version>
@@ -1752,6 +1774,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.jboss.shrinkwrap</groupId>
         <artifactId>shrinkwrap-impl-base</artifactId>
         <version>${version.shrinkwrap}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.jboss.shrinkwrap.resolver</groupId>
@@ -1776,6 +1799,27 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>arquillian-tomcat-embedded-8</artifactId>
         <version>${version.arquillian.tomcat}</version>
         <scope>test</scope>
+      </dependency>
+      <!-- Third party dependencies used by deprecated services  -->
+      <dependency>
+        <groupId>org.ow2.jotm</groupId>
+        <artifactId>jotm-core</artifactId>
+        <version>${org.ow2.jotm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ow2.spec.ee</groupId>
+        <artifactId>ow2-jta-1.1-spec</artifactId>
+        <version>${ow2-jta-1.1-spec.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.experlog</groupId>
+        <artifactId>xapool</artifactId>
+        <version>${com.experlog.xapool.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.atomikos</groupId>
+        <artifactId>transactions-jta</artifactId>
+        <version>${transactions-jta.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
