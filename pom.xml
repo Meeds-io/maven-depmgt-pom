@@ -194,6 +194,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.jackson.core>1.9.9</version.jackson.core>
     <org.lombok.version>1.18.2</org.lombok.version>
+    <org.gatein.common.version>2.2.2.Final</org.gatein.common.version>
+   <!-- For testing only -->
+   <version.arquillian>1.1.12.Final</version.arquillian>
+   <version.arquillian.tomcat>1.0.0</version.arquillian.tomcat>
+   <version.shrinkwrap>1.2.6</version.shrinkwrap>
+   <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
+    <!-- Servers -->
+    <tomcat8.version>8.5.55</tomcat8.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -1693,6 +1701,81 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${org.lombok.version}</version>
+      </dependency>
+      <!-- GateIN common artifacts -->
+      <dependency>
+        <groupId>org.gatein.common</groupId>
+        <artifactId>common-common</artifactId>
+        <version>${org.gatein.common.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein.common</groupId>
+        <artifactId>common-logging</artifactId>
+        <version>${org.gatein.common.version}</version>
+      </dependency>
+      <!-- Tomcat8 artifacts -->
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-catalina</artifactId>
+        <version>${tomcat8.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-core</artifactId>
+        <version>${tomcat8.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+        <version>${tomcat8.version}</version>
+      </dependency>
+      <!-- Arquillian/Shrinkwrap stack -->
+      <dependency>
+        <groupId>org.jboss.arquillian.container</groupId>
+        <artifactId>arquillian-container-spi</artifactId>
+        <version>${version.arquillian}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.junit</groupId>
+        <artifactId>arquillian-junit-container</artifactId>
+        <version>${version.arquillian}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap</groupId>
+        <artifactId>shrinkwrap-api</artifactId>
+        <version>${version.shrinkwrap}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap</groupId>
+        <artifactId>shrinkwrap-impl-base</artifactId>
+        <version>${version.shrinkwrap}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap.resolver</groupId>
+        <artifactId>shrinkwrap-resolver-api-maven</artifactId>
+        <version>${version.shrinkwrap.resolver}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap.resolver</groupId>
+        <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
+        <version>${version.shrinkwrap.resolver}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.protocol</groupId>
+        <artifactId>arquillian-protocol-servlet</artifactId>
+        <version>${version.arquillian}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.container</groupId>
+        <artifactId>arquillian-tomcat-embedded-8</artifactId>
+        <version>${version.arquillian.tomcat}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
