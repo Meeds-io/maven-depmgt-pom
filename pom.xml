@@ -69,6 +69,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <commons-httpclient.version>3.1</commons-httpclient.version>
     <commons-io.version>2.4</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
+    <commons-lang3.version>3.3.2</commons-lang3.version>
     <dom4j.version>1.6.1</dom4j.version>
     <ecs.version>1.4.2</ecs.version>
     <mime-util.version>2.1.3</mime-util.version>
@@ -132,6 +133,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
     <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
+    <org.jboss.portletbridge.version>3.3.1.Final</org.jboss.portletbridge.version>
+    <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
@@ -198,8 +201,15 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.jackson.core>1.9.9</version.jackson.core>
+    <version.reflext>1.1.0</version.reflext>
+    <version.scribejava>6.9.0</version.scribejava>
     <org.lombok.version>1.18.2</org.lombok.version>
+    <org.gatein.api.version>1.0.1.Final</org.gatein.api.version>
+    <org.gatein.mop.version>1.3.2.Final</org.gatein.mop.version>
+    <org.gatein.mgmt.version>2.1.0.Final</org.gatein.mgmt.version>
+    <org.gatein.naming.version>1.1.1.Final</org.gatein.naming.version>
     <org.gatein.common.version>2.2.2.Final</org.gatein.common.version>
+    <org.gatein.captcha.version>1.1.1.Final-gatein-4</org.gatein.captcha.version>
     <!-- 3rd party deprecated libraries versions -->
     <org.ow2.jotm.version>2.1.9</org.ow2.jotm.version>
     <ow2-jta-1.1-spec.version>1.0.13</ow2-jta-1.1-spec.version>
@@ -570,6 +580,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.htmlparser</groupId>
         <artifactId>htmlparser</artifactId>
         <version>${version.htmlparser}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
@@ -1013,6 +1028,17 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jbossjta</artifactId>
         <version>${org.jboss.jbossts.version}</version>
       </dependency>
+      <!-- Portlet Bridge -->
+      <dependency>
+        <groupId>org.jboss.portletbridge</groupId>
+        <artifactId>portletbridge-api</artifactId>
+        <version>${org.jboss.portletbridge.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.portletbridge</groupId>
+        <artifactId>portletbridge-impl</artifactId>
+        <version>${org.jboss.portletbridge.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
@@ -1092,6 +1118,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-less4j</artifactId>
         <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.scribejava</groupId>
+        <artifactId>scribejava-apis</artifactId>
+        <version>${version.scribejava}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.scribejava</groupId>
+        <artifactId>scribejava-core</artifactId>
+        <version>${version.scribejava}</version>
       </dependency>
       <dependency>
         <groupId>com.github.sommeri</groupId>
@@ -1249,6 +1285,32 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
+      </dependency>
+      <!-- Reflext -->
+      <dependency>
+        <groupId>org.reflext</groupId>
+        <artifactId>reflext.api</artifactId>
+        <version>${version.reflext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.reflext</groupId>
+        <artifactId>reflext.apt</artifactId>
+        <version>${version.reflext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.reflext</groupId>
+        <artifactId>reflext.core</artifactId>
+        <version>${version.reflext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.reflext</groupId>
+        <artifactId>reflext.jlr</artifactId>
+        <version>${version.reflext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.reflext</groupId>
+        <artifactId>reflext.spi</artifactId>
+        <version>${version.reflext}</version>
       </dependency>
       <!-- Use SLF4J and not commons-logging -->
       <!-- commons-logging must be removed from dependencies -->
@@ -1755,16 +1817,66 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>lombok</artifactId>
         <version>${org.lombok.version}</version>
       </dependency>
-      <!-- GateIN common artifacts -->
+      <!-- GateIn API -->
+      <dependency>
+        <groupId>org.gatein.api</groupId>
+        <artifactId>gatein-api</artifactId>
+        <version>${org.gatein.api.version}</version>
+      </dependency>
+      <!-- GateIn common -->
+      <dependency>
+        <groupId>org.gatein.common</groupId>
+        <artifactId>common-logging</artifactId>
+        <version>${org.gatein.common.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.gatein.common</groupId>
         <artifactId>common-common</artifactId>
         <version>${org.gatein.common.version}</version>
       </dependency>
+      <!-- Gatein Mop -->
       <dependency>
-        <groupId>org.gatein.common</groupId>
-        <artifactId>common-logging</artifactId>
-        <version>${org.gatein.common.version}</version>
+        <groupId>org.gatein.mop</groupId>
+        <artifactId>mop-api</artifactId>
+        <version>${org.gatein.mop.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein.mop</groupId>
+        <artifactId>mop-spi</artifactId>
+        <version>${org.gatein.mop.version}</version>
+      </dependency>
+      <!-- Gatein Mgmt -->
+      <dependency>
+        <groupId>org.gatein.management</groupId>
+        <artifactId>gatein-management-api</artifactId>
+        <version>${org.gatein.mgmt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein.management</groupId>
+        <artifactId>gatein-management-spi</artifactId>
+        <version>${org.gatein.mgmt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein.management</groupId>
+        <artifactId>gatein-management-core</artifactId>
+        <version>${org.gatein.mgmt.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein.management</groupId>
+        <artifactId>gatein-management-rest</artifactId>
+        <version>${org.gatein.mgmt.version}</version>
+      </dependency>
+      <!-- Gatein captcha -->
+      <dependency>
+        <groupId>org.gatein.captcha</groupId>
+        <artifactId>simplecaptcha</artifactId>
+        <version>${org.gatein.captcha.version}</version>
+      </dependency>
+      <!-- GateIn Mgmt uses jboss-dmr for model impl -->
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-dmr</artifactId>
+        <version>${org.jboss.dmr.version}</version>
       </dependency>
       <!-- Tomcat8 artifacts -->
       <dependency>
