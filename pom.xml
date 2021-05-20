@@ -93,6 +93,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.validation.version>1.1.0.Final</javax.validation.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
     <javax.xml.stream.stax-api.version>1.0-2</javax.xml.stream.stax-api.version>
+    <javax.websocket-api.version>1.0</javax.websocket-api.version>
     <!-- 1.1.3 used by jdom has some wrong dependencies -->
     <jaxen.version>1.1.6</jaxen.version>
     <jdom.version>1.1.3</jdom.version>
@@ -519,6 +520,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>javax.ccpp</groupId>
         <artifactId>ccpp</artifactId>
         <version>${javax.ccpp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.websocket</groupId>
+        <artifactId>javax.websocket-api</artifactId>
+        <version>${javax.websocket-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
