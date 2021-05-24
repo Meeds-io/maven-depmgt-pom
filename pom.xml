@@ -148,7 +148,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
     <org.juzu.version>1.2.x-SNAPSHOT</org.juzu.version>
-    <org.less4j.version>1.4.0</org.less4j.version>
+    <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
     <org.powermock.version>1.6.5</org.powermock.version>
@@ -185,7 +185,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.nuhtmlparser>1.0.7</version.nuhtmlparser>
     <version.caja.caja>r5054</version.caja.caja>
     <version.caja.json>r1</version.caja.json>
-    <version.org.antlr>3.5</version.org.antlr>
+    <version.org.antlr>3.5.2</version.org.antlr>
     <version.antlr>2.7.6rc1</version.antlr>
     <version.aopalliance>1.0</version.aopalliance>
     <version.asm>3.3.1</version.asm>
