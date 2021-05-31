@@ -174,7 +174,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <xerces.version>2.9.1</xerces.version>
     <xpp3.version>1.1.4c</xpp3.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
-    <version.jaxb>2.1</version.jaxb>
+    <version.jaxb>2.3.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
     <version.javax.mail>1.4.7</version.javax.mail>
     <version.javax.resource>1.5</version.javax.resource>
