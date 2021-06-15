@@ -152,7 +152,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>1.10.19</org.mockito.version>
-    <org.powermock.version>1.6.5</org.powermock.version>
+    <org.powermock.version>2.0.9</org.powermock.version>
+    <org.powermock.api.version>1.7.4</org.powermock.api.version>
     <org.easymock.version>2.5</org.easymock.version>
     <org.ogce.xpp3.version>1.1.6</org.ogce.xpp3.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
@@ -1247,12 +1248,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.powermock</groupId>
         <artifactId>powermock-api-mockito</artifactId>
-        <version>${org.powermock.version}</version>
+        <version>${org.powermock.api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.powermock</groupId>
         <artifactId>powermock-api-easymock</artifactId>
-        <version>${org.powermock.version}</version>
+        <version>${org.powermock.api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.easymock</groupId>
