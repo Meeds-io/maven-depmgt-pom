@@ -139,7 +139,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
     <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
     <org.jboss.jbossts.version>4.16.6.Final</org.jboss.jbossts.version>
-    <org.javassist.version>3.20.0-GA</org.javassist.version>
+    <org.javassist.version>3.28.0-GA</org.javassist.version>
     <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
     <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
