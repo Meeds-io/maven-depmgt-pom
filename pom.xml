@@ -47,7 +47,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <ch.qas.logback.version>1.1.2</ch.qas.logback.version>
+    <ch.qas.logback.version>1.2.0</ch.qas.logback.version>
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
     <com.google.guava.version>20.0</com.google.guava.version>
     <com.google.javascript.version>v20170910</com.google.javascript.version>
