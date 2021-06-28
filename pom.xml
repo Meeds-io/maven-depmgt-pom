@@ -78,7 +78,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
     <!-- PLF-6409: Liquibase dependency -->
-    <org.snakeyaml.version>1.13</org.snakeyaml.version>
+    <org.snakeyaml.version>1.26</org.snakeyaml.version>
     <mime-util.version>2.1.3</mime-util.version>
     <ical4j.version>1.0-beta5</ical4j.version>
     <io.swagger.version>1.5.22</io.swagger.version>
