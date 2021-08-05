@@ -196,7 +196,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jsecurity>0.9.0</version.jsecurity>
     <version.apache.xerces>2.12.1</version.apache.xerces>
     <version.xml-apis>1.4.01</version.xml-apis>
-    <version.apache.sanselan>0.97-incubator</version.apache.sanselan>
     <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
     <version.apache.commons-pool>1.6</version.apache.commons-pool>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
@@ -703,11 +702,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-core</artifactId>
         <version>${org.apache.tika.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.sanselan</groupId>
-        <artifactId>sanselan</artifactId>
-        <version>${version.apache.sanselan}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
