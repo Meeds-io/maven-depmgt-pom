@@ -169,7 +169,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>2.3.2</quartz.version>
     <rome.version>1.15.0</rome.version>
-    <xerces.version>2.9.1</xerces.version>
+    <xerces.version>2.12.1</xerces.version>
     <xpp3.version>1.1.4c</xpp3.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
@@ -193,7 +193,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jhlabs>2.0.235</version.jhlabs>
     <version.htmlparser>2.1</version.htmlparser>
     <version.jsecurity>0.9.0</version.jsecurity>
-    <version.apache.xerces>2.12.1</version.apache.xerces>
     <version.xml-apis>1.4.01</version.xml-apis>
     <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
     <version.apache.commons-pool>1.6</version.apache.commons-pool>
@@ -1756,16 +1755,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>xerces</groupId>
         <artifactId>xercesImpl</artifactId>
         <version>${xerces.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>apache-xerces</groupId>
-        <artifactId>xercesImpl</artifactId>
-        <version>${version.apache.xerces}</version>
-      </dependency>
-      <dependency>
-        <groupId>apache-xerces</groupId>
-        <artifactId>xml-apis</artifactId>
-        <version>${version.apache.xerces}</version>
       </dependency>
       <dependency>
         <groupId>xml-apis</groupId>
