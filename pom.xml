@@ -52,7 +52,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.google.javascript.version>v20170910</com.google.javascript.version>
     <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
-    <com.googlecode.owasp-java-html-sanitizer.version>20160413.1</com.googlecode.owasp-java-html-sanitizer.version>
+    <com.googlecode.owasp-java-html-sanitizer.version>20200713.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.ibm.icu.version>56.1</com.ibm.icu.version>
     <com.isomorphic.smartgwt.lgpl.version>6.0-p20170514</com.isomorphic.smartgwt.lgpl.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
