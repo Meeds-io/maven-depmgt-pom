@@ -201,7 +201,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.apache.commons-logging>1.2</version.apache.commons-logging>
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
-    <version.google.oauth.client>1.30.6</version.google.oauth.client>
+    <version.google.oauth.client>1.32.1</version.google.oauth.client>
     <version.google.apis.oauth2>v2-rev157-1.25.0</version.google.apis.oauth2>
     <version.google.api.client>1.30.9</version.google.api.client>
     <version.google.http.client>1.35.0</version.google.http.client>
