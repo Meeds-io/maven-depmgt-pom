@@ -25,14 +25,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
-  <version>20.0-20211020</version>
+  <version>20.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-depmgt-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-depmgt-pom.git</developerConnection>
-    <tag>20.0-20211020</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/exoplatform/maven-depmgt-pom</url>
   </scm>
   <properties>
@@ -146,7 +146,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20070829</org.json.version>
-    <org.juzu.version>1.2.0</org.juzu.version>
+    <org.juzu.version>1.2.x-SNAPSHOT</org.juzu.version>
     <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>3.4.2</org.liquibase.version>
     <org.mockito.version>3.11.1</org.mockito.version>
