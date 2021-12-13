@@ -101,7 +101,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <junit.version>4.13.2</junit.version>
     <jmock.version>1.0.1</jmock.version>
     <jsoup.version>1.14.2</jsoup.version>
-    <log4j.version>1.2.17</log4j.version>
     <net.java.dev.jna>4.1.0</net.java.dev.jna>
     <net.oauth.core.version>20100527</net.oauth.core.version>
     <net.sourceforge.cssparser.version>0.9.18</net.sourceforge.cssparser.version>
@@ -156,7 +155,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.picketlink.federation.version>2.5.5.Final</org.picketlink.federation.version>
     <org.jboss.negotiation.version>2.2.5.Final</org.jboss.negotiation.version>
-    <org.slf4j.version>1.7.18</org.slf4j.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.testng.version>6.8.21</org.testng.version>
@@ -573,11 +571,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
         <version>${jsoup.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
       </dependency>
       <dependency>
         <groupId>net.java.dev.jna</groupId>
@@ -1242,26 +1235,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.picketlink.idm</groupId>
         <artifactId>picketlink-idm-common</artifactId>
         <version>${org.picketlink.idm.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.picketlink.idm</groupId>
         <artifactId>picketlink-idm-core</artifactId>
         <version>${org.picketlink.idm.version}</version>
         <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
           <exclusion>
             <groupId>javax.xml.stream</groupId>
             <artifactId>stax-api</artifactId>
@@ -1273,14 +1252,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>picketlink-idm-hibernate</artifactId>
         <version>${org.picketlink.idm.version}</version>
         <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
           <exclusion>
             <groupId>javax.xml.stream</groupId>
             <artifactId>stax-api</artifactId>
@@ -1328,47 +1299,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.reflext</groupId>
         <artifactId>reflext.spi</artifactId>
         <version>${version.reflext}</version>
-      </dependency>
-      <!-- Use SLF4J and not commons-logging -->
-      <!-- commons-logging must be removed from dependencies -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>jcl-over-slf4j</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <!-- Redirect everything from JUL to SLF4J -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>jul-to-slf4j</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <!-- Use SLF4J and not log4j -->
-      <!-- log4j must be removed from dependencies -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>log4j-over-slf4j</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <!-- SLF4J API -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-jdk14</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
-        <version>${org.slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>${org.slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.staxnav</groupId>
@@ -1843,12 +1773,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>japex</artifactId>
         <version>${version.japex}</version>
         <scope>test</scope>
-        <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.projectlombok</groupId>
