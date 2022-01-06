@@ -1221,6 +1221,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.picketlink.idm</groupId>
         <artifactId>picketlink-idm-api</artifactId>
         <version>${org.picketlink.idm.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.picketlink.idm</groupId>
@@ -1243,6 +1249,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.picketlink.idm.version}</version>
         <exclusions>
           <exclusion>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.stream</groupId>
             <artifactId>stax-api</artifactId>
           </exclusion>
@@ -1253,6 +1263,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>picketlink-idm-hibernate</artifactId>
         <version>${org.picketlink.idm.version}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.xml.stream</groupId>
             <artifactId>stax-api</artifactId>
