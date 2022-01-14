@@ -1266,21 +1266,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.picketlink.idm</groupId>
-        <artifactId>picketlink-idm-hibernate</artifactId>
-        <version>${org.picketlink.idm.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>javax.xml.stream</groupId>
-            <artifactId>stax-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.picketlink.idm</groupId>
         <artifactId>picketlink-idm-ldap</artifactId>
         <version>${org.picketlink.idm.version}</version>
         <exclusions>
