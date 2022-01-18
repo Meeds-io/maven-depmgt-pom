@@ -128,7 +128,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.hibernate.common.hibernate-commons-annotations.version>5.1.2.Final</org.hibernate.common.hibernate-commons-annotations.version>
     <org.hibernate.hibernate-core.version>5.6.3.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-entitymanager.version>5.6.3.Final</org.hibernate.hibernate-entitymanager.version>
-    <org.hibernate.hibernate-validator.version>4.2.0.Final</org.hibernate.hibernate-validator.version>
     <org.hsqldb.version>2.4.0</org.hsqldb.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
@@ -958,11 +957,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
             <artifactId>jboss-transaction-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-validator</artifactId>
-        <version>${org.hibernate.hibernate-validator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.common</groupId>
