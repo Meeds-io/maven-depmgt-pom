@@ -57,7 +57,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.isomorphic.smartgwt.lgpl.version>6.0-p20170514</com.isomorphic.smartgwt.lgpl.version>
     <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
-    <com.sun.mail.version>1.5.5</com.sun.mail.version>
+    <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
     <com.sun.xml.jersey-client.version>1.12</com.sun.xml.jersey-client.version>
     <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
@@ -83,18 +83,18 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <ical4j.version>1.0-beta5</ical4j.version>
     <io.swagger.version>1.5.22</io.swagger.version>
     <io.jsonwebtoken.version>0.10.5</io.jsonwebtoken.version>
-    <javax.activation.version>1.1.1</javax.activation.version>
+    <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.jcr.version>1.0</javax.jcr.version>
     <javax.portlet.version>2.0</javax.portlet.version>
-    <javax.servlet.version>3.1.0</javax.servlet.version>
-    <javax.servlet.jsp.version>2.3.1</javax.servlet.jsp.version>
-    <javax.transaction.version>1.1</javax.transaction.version>
-    <javax.validation.version>1.1.0.Final</javax.validation.version>
+    <javax.servlet.version>4.0.1</javax.servlet.version>
+    <javax.servlet.jsp.version>2.3.3</javax.servlet.jsp.version>
+    <javax.transaction.version>1.3</javax.transaction.version>
+    <javax.validation.version>2.0.1.Final</javax.validation.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
     <javax.xml.stream.stax-api.version>1.0-2</javax.xml.stream.stax-api.version>
-    <javax.websocket-api.version>1.0</javax.websocket-api.version>
+    <javax.websocket-api.version>1.1</javax.websocket-api.version>
     <!-- 1.1.3 used by jdom has some wrong dependencies -->
     <jaxen.version>1.1.6</jaxen.version>
     <jgroups.version>3.6.13.Final</jgroups.version>
@@ -172,8 +172,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
-    <version.javax.mail>1.4.7</version.javax.mail>
-    <version.javax.resource>1.5</version.javax.resource>
+    <version.javax.mail>1.6.2</version.javax.mail>
+    <version.javax.resource>1.7.1</version.javax.resource>
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
     <version.cdi.spec>1.0-SP4</version.cdi.spec>
@@ -222,11 +222,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.experlog.xapool.version>1.5.0</com.experlog.xapool.version>
     <!-- For testing only -->
     <version.arquillian>1.1.12.Final</version.arquillian>
-    <version.arquillian.tomcat>1.0.0</version.arquillian.tomcat>
+    <version.arquillian.tomcat>1.1.0.Final</version.arquillian.tomcat>
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <org.apache.tomcat.version>8.5.65</org.apache.tomcat.version>
+    <org.apache.tomcat.version>9.0.58</org.apache.tomcat.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -454,8 +454,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>javax.activation</groupId>
-        <artifactId>activation</artifactId>
-        <version>${javax.activation.version}</version>
+        <artifactId>javax.activation-api</artifactId>
+        <version>${javax.activation-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
@@ -474,12 +474,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>com.sun.mail</groupId>
-        <artifactId>mail</artifactId>
+        <artifactId>javax.mail</artifactId>
         <version>${com.sun.mail.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.mail</groupId>
-        <artifactId>mail</artifactId>
+        <artifactId>javax.mail-api</artifactId>
         <version>${version.javax.mail}</version>
       </dependency>
       <dependency>
@@ -504,12 +504,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>javax.resource</groupId>
-        <artifactId>connector-api</artifactId>
+        <artifactId>javax.resource-api</artifactId>
         <version>${version.javax.resource}</version>
       </dependency>
       <dependency>
         <groupId>javax.transaction</groupId>
-        <artifactId>jta</artifactId>
+        <artifactId>javax.transaction-api</artifactId>
         <version>${javax.transaction.version}</version>
       </dependency>
       <dependency>
@@ -1893,17 +1893,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>tomcat-embed-jasper</artifactId>
         <version>${org.apache.tomcat.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-catalina-jmx-remote</artifactId>
-        <version>${org.apache.tomcat.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-util</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
       <!-- Arquillian/Shrinkwrap stack -->
       <dependency>
         <groupId>org.jboss.arquillian.container</groupId>
@@ -1949,7 +1938,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.jboss.arquillian.container</groupId>
-        <artifactId>arquillian-tomcat-embedded-8</artifactId>
+        <artifactId>arquillian-tomcat-embedded-9</artifactId>
         <version>${version.arquillian.tomcat}</version>
         <scope>test</scope>
       </dependency>
