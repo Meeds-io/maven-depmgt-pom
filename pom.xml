@@ -200,11 +200,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
     <version.google.oauth.client>1.30.6</version.google.oauth.client>
-    <version.google.apis.oauth2>v2-rev157-1.25.0</version.google.apis.oauth2>
-    <version.google.api.client>1.30.9</version.google.api.client>
-    <version.google.http.client>1.35.0</version.google.http.client>
-    <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
-    <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
+    <version.google.apis.oauth2>v2-rev20200213-1.32.1</version.google.apis.oauth2>
+    <version.google.apis.plus>v1-rev20190328-1.30.10</version.google.apis.plus>
     <version.jackson.core>1.9.9</version.jackson.core>
     <version.reflext>1.1.0</version.reflext>
     <version.scribejava>6.9.0</version.scribejava>
@@ -1762,26 +1759,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${version.twitter4j}</version>
       </dependency>
       <!-- OAuth integration with Google -->
-      <dependency>
-        <groupId>com.google.oauth-client</groupId>
-        <artifactId>google-oauth-client</artifactId>
-        <version>${version.google.oauth.client}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api-client</groupId>
-        <artifactId>google-api-client</artifactId>
-        <version>${version.google.api.client}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.http-client</groupId>
-        <artifactId>google-http-client</artifactId>
-        <version>${version.google.http.client}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.http-client</groupId>
-        <artifactId>google-http-client-jackson</artifactId>
-        <version>${version.google.http.client.jackson}</version>
-      </dependency>
       <dependency>
         <groupId>com.google.apis</groupId>
         <artifactId>google-api-services-plus</artifactId>
