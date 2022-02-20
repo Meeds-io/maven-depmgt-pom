@@ -25,14 +25,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
-  <version>20.x-SNAPSHOT</version>
+  <version>20.0-20220220</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-depmgt-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-depmgt-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>20.0-20220220</tag>
     <url>https://github.com/exoplatform/maven-depmgt-pom</url>
   </scm>
   <properties>
