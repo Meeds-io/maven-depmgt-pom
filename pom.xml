@@ -200,7 +200,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- jetty-client is a dependency coming from cometd. as we use cometd 3.0.8, the version for jetty is 9.2.14.v20151106,
     which haev several CVE related
     This dependency is here to force last 9.2.x version available for jetty-client -->
-    <version.eclipse.jetty-client>9.2.30.v20200428</version.eclipse.jetty-client>
+    <version.eclipse.jetty-client>9.4.40.v20210413</version.eclipse.jetty-client>
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
     <version.google.oauth.client>1.33.3</version.google.oauth.client>
