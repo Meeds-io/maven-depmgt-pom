@@ -173,7 +173,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>2.3.2</quartz.version>
     <rome.version>1.15.0</rome.version>
-    <xerces.version>2.12.1</xerces.version>
+    <xerces.version>2.12.2</xerces.version>
     <xpp3.version>1.1.4c</xpp3.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
