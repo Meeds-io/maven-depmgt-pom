@@ -81,7 +81,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.snakeyaml.version>1.29</org.snakeyaml.version>
     <mime-util.version>2.1.3</mime-util.version>
     <ical4j.version>1.0-beta5</ical4j.version>
-    <io.swagger.version>1.6.6</io.swagger.version>
+    <io.swagger.version>2.2.1</io.swagger.version>
     <io.jsonwebtoken.version>0.11.5</io.jsonwebtoken.version>
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
@@ -428,10 +428,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${ical4j.version}</version>
       </dependency>
       <dependency>
-        <groupId>io.swagger</groupId>
-        <artifactId>swagger-jaxrs</artifactId>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-annotations</artifactId>
         <version>${io.swagger.version}</version>
         <exclusions>
+          <exclusion>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-jaxrs2</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>annotations</artifactId>
