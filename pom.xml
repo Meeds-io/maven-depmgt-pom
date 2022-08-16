@@ -233,6 +233,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
     <org.apache.tomcat.version>9.0.60</org.apache.tomcat.version>
+    <com.fasterxml.jackson.version>2.13.3</com.fasterxml.jackson.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -1734,6 +1735,21 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>com.atomikos</groupId>
         <artifactId>transactions-jta</artifactId>
         <version>${transactions-jta.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${com.fasterxml.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${com.fasterxml.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${com.fasterxml.jackson.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
