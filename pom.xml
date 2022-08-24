@@ -149,7 +149,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
-    <org.json.version>20070829</org.json.version>
+    <org.json.version>20220320</org.json.version>
     <org.juzu.version>1.2.0</org.juzu.version>
     <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>4.9.1</org.liquibase.version>
