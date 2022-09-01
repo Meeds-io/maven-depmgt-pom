@@ -101,7 +101,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <jgroups.version>3.6.13.Final</jgroups.version>
     <junit.version>4.13.2</junit.version>
     <jmock.version>1.0.1</jmock.version>
-    <jsoup.version>1.14.2</jsoup.version>
+    <jsoup.version>1.15.3</jsoup.version>
     <net.java.dev.jna>4.1.0</net.java.dev.jna>
     <net.oauth.core.version>20100527</net.oauth.core.version>
     <net.sourceforge.cssparser.version>0.9.18</net.sourceforge.cssparser.version>
