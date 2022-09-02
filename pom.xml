@@ -66,7 +66,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
-    <commons-io.version>2.7</commons-io.version>
+    <commons-io.version>2.11.0</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
     <commons-lang3.version>3.11</commons-lang3.version>
     <commons-collections4.version>4.4</commons-collections4.version>
@@ -87,6 +87,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.jcr.version>1.0</javax.jcr.version>
+    <javax.rmi.version>1.0.6.Final</javax.rmi.version>
     <javax.portlet.version>2.0</javax.portlet.version>
     <javax.servlet.version>4.0.1</javax.servlet.version>
     <javax.servlet.jsp.version>2.3.3</javax.servlet.jsp.version>
@@ -113,9 +114,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
-    <org.apache.poi.version>4.1.2</org.apache.poi.version>
+    <org.apache.poi.version>5.2.2</org.apache.poi.version>
     <org.apache.tika.version>1.28.4</org.apache.tika.version>
-    <org.apache.xmlbeans.version>3.1.0</org.apache.xmlbeans.version>
+    <org.apache.xmlbeans.version>5.0.3</org.apache.xmlbeans.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.8.8</org.aspectj.version>
@@ -161,6 +162,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.picketlink.federation.version>2.5.5.Final</org.picketlink.federation.version>
     <org.jboss.negotiation.version>2.2.5.Final</org.jboss.negotiation.version>
     <org.slf4j.version>1.7.32</org.slf4j.version>
+    <org.log4j.api.version>2.18.0</org.log4j.api.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.testng.version>6.8.21</org.testng.version>
@@ -479,6 +481,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${javax.jcr.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.jboss.spec.javax.rmi</groupId>
+        <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+        <version>${javax.rmi.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${com.sun.mail.version}</version>
@@ -689,16 +696,45 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.apache.poi</groupId>
         <artifactId>poi</artifactId>
         <version>${org.apache.poi.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-ooxml</artifactId>
         <version>${org.apache.poi.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-full</artifactId>
+        <version>${org.apache.poi.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-scratchpad</artifactId>
         <version>${org.apache.poi.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
@@ -1346,6 +1382,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.reflext</groupId>
         <artifactId>reflext.spi</artifactId>
         <version>${version.reflext}</version>
+      </dependency>
+      <!-- dependency is here because Apache POI needs log4j-api.-->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${org.log4j.api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
