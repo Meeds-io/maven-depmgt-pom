@@ -216,7 +216,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.codehaus.jackson.core.asl>1.9.13</version.codehaus.jackson.core.asl>
     <version.reflext>1.1.0</version.reflext>
     <version.scribejava>6.9.0</version.scribejava>
-    <org.lombok.version>1.18.2</org.lombok.version>
+    <org.lombok.version>1.18.24</org.lombok.version>
     <org.gatein.api.version>1.0.1.Final</org.gatein.api.version>
     <org.gatein.mop.version>1.3.2.Final</org.gatein.mop.version>
     <org.gatein.mgmt.version>2.1.0.Final</org.gatein.mgmt.version>
