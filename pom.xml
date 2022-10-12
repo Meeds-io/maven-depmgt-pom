@@ -99,7 +99,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.json.api.version>1.1</javax.json.api.version>
     <!-- 1.1.3 used by jdom has some wrong dependencies -->
     <jaxen.version>1.1.6</jaxen.version>
-    <jgroups.version>3.6.13.Final</jgroups.version>
+    <jgroups.version>4.0.0.Final</jgroups.version>
     <junit.version>4.13.2</junit.version>
     <jmock.version>1.0.1</jmock.version>
     <jsoup.version>1.15.3</jsoup.version>
