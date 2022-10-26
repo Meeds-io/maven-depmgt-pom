@@ -236,6 +236,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- Servers -->
     <org.apache.tomcat.version>9.0.60</org.apache.tomcat.version>
     <com.fasterxml.jackson.version>2.13.3</com.fasterxml.jackson.version>
+    <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -1792,6 +1793,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${com.fasterxml.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.graalvm.js</groupId>
+        <artifactId>js</artifactId>
+        <version>${org.graalvm.js.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.graalvm.js</groupId>
+        <artifactId>js-scriptengine</artifactId>
+        <version>${org.graalvm.js.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
