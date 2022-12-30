@@ -161,7 +161,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.picketlink.federation.version>2.5.5.Final</org.picketlink.federation.version>
     <org.jboss.negotiation.version>2.2.5.Final</org.jboss.negotiation.version>
-    <org.slf4j.version>1.7.32</org.slf4j.version>
+    <org.slf4j.version>1.7.36</org.slf4j.version>
     <org.log4j.api.version>2.18.0</org.log4j.api.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
@@ -1393,6 +1393,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
+        <version>${org.slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jul-to-slf4j</artifactId>
         <version>${org.slf4j.version}</version>
       </dependency>
       <dependency>
