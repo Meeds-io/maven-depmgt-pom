@@ -21,11 +21,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   <parent>
     <artifactId>maven-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>27-M02</version>
+    <version>27-security-fix-SNAPSHOT</version>
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
-  <version>23.x-exo-SNAPSHOT</version>
+  <version>23.x-security-fix-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
