@@ -234,7 +234,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <org.apache.tomcat.version>9.0.60</org.apache.tomcat.version>
+    <org.apache.tomcat.version>9.0.69</org.apache.tomcat.version>
     <com.fasterxml.jackson.version>2.13.3</com.fasterxml.jackson.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
