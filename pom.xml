@@ -138,7 +138,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.hsqldb.version>2.7.1</org.hsqldb.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
-    <org.infinispan.version>8.2.6.Final</org.infinispan.version>
+    <org.infinispan.version>11.0.6.Final</org.infinispan.version>
     <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
     <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
     <org.jboss.jbossts.version>4.16.6.Final</org.jboss.jbossts.version>
