@@ -159,7 +159,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.easymock.version>2.5</org.easymock.version>
     <org.ogce.xpp3.version>1.1.6</org.ogce.xpp3.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
-    <org.picketlink.federation.version>2.5.5.Final</org.picketlink.federation.version>
+    <org.picketlink.federation.version>2.7.0.Final</org.picketlink.federation.version>
     <org.jboss.negotiation.version>2.2.5.Final</org.jboss.negotiation.version>
     <org.slf4j.version>1.7.36</org.slf4j.version>
     <org.log4j.api.version>2.18.0</org.log4j.api.version>
