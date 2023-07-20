@@ -48,19 +48,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
     <com.google.code.guice.version>3.0</com.google.code.guice.version>
-    <com.google.guava.version>30.0-jre</com.google.guava.version>
     <com.google.javascript.version>v20220104</com.google.javascript.version>
-    <com.google.gwt.version>${version.gwt.plugin}</com.google.gwt.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
-    <com.googlecode.owasp-java-html-sanitizer.version>20211018.2</com.googlecode.owasp-java-html-sanitizer.version>
+    <com.googlecode.owasp-java-html-sanitizer.version>20220608.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.ibm.icu.version>56.1</com.ibm.icu.version>
-    <com.isomorphic.smartgwt.lgpl.version>6.0-p20170514</com.isomorphic.smartgwt.lgpl.version>
-    <com.lowagie.itext.version>2.1.7</com.lowagie.itext.version>
     <com.mattbertolini.version>2.0.0</com.mattbertolini.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
-    <com.sun.xml.stream.version>1.0.2</com.sun.xml.stream.version>
-    <com.sun.xml.jersey-client.version>1.12</com.sun.xml.jersey-client.version>
-    <com.totsp.feepod.itunes-com-podcast.version>0.2</com.totsp.feepod.itunes-com-podcast.version>
     <commons-chain.version>1.2</commons-chain.version>
     <commons-codec.version>1.10</commons-codec.version>
     <commons-collections.version>3.2.2</commons-collections.version>
@@ -69,8 +62,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <commons-io.version>2.11.0</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
     <commons-lang3.version>3.11</commons-lang3.version>
-    <commons-collections4.version>4.4</commons-collections4.version>
-    <dom4j.version>2.1.3</dom4j.version>
     <ecs.version>1.4.2</ecs.version>
     <!-- LOGBACK implementation to use to manage logs -->
     <ch.qos.logback.version>1.2.6</ch.qos.logback.version>
@@ -78,50 +69,26 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
     <!-- PLF-6409: Liquibase dependency -->
-    <org.snakeyaml.version>1.29</org.snakeyaml.version>
+    <org.snakeyaml.version>2.0</org.snakeyaml.version>
     <mime-util.version>2.1.3</mime-util.version>
-    <ical4j.version>1.0-beta5</ical4j.version>
     <io.swagger.version>2.2.1</io.swagger.version>
     <io.jsonwebtoken.version>0.11.5</io.jsonwebtoken.version>
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
-    <javax.jcr.version>1.0</javax.jcr.version>
-    <javax.rmi.version>1.0.6.Final</javax.rmi.version>
     <javax.portlet.version>2.0</javax.portlet.version>
     <javax.servlet.version>4.0.1</javax.servlet.version>
     <javax.servlet.jsp.version>2.3.3</javax.servlet.jsp.version>
     <javax.transaction.version>1.3</javax.transaction.version>
-    <javax.validation.version>2.0.1.Final</javax.validation.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
-    <javax.xml.stream.stax-api.version>1.0-2</javax.xml.stream.stax-api.version>
-    <javax.websocket-api.version>1.1</javax.websocket-api.version>
-    <javax.json.api.version>1.1</javax.json.api.version>
     <!-- 1.1.3 used by jdom has some wrong dependencies -->
-    <jaxen.version>1.1.6</jaxen.version>
     <jgroups.version>3.6.13.Final</jgroups.version>
     <junit.version>4.13.2</junit.version>
-    <jmock.version>1.0.1</jmock.version>
     <jsoup.version>1.15.3</jsoup.version>
-    <net.java.dev.jna>4.1.0</net.java.dev.jna>
-    <net.oauth.core.version>20100527</net.oauth.core.version>
-    <net.sourceforge.cssparser.version>0.9.18</net.sourceforge.cssparser.version>
     <net.sourceforge.nekohtml.version>1.9.22</net.sourceforge.nekohtml.version>
-    <net.sourceforge.htmlcleaner.version>2.7</net.sourceforge.htmlcleaner.version>
-    <org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>1.0.1</org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version>
     <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
-    <org.apache.httpcomponents.httpcore.version>4.4.5</org.apache.httpcomponents.httpcore.version>
-    <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
-    <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
-    <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
     <org.apache.poi.version>5.2.2</org.apache.poi.version>
-    <org.apache.tika.version>1.28.4</org.apache.tika.version>
-    <org.apache.xmlbeans.version>5.0.3</org.apache.xmlbeans.version>
-    <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
-    <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.aspectj.version>1.8.8</org.aspectj.version>
-    <org.bouncycastle.version>1.67</org.bouncycastle.version>
-    <org.chromattic.version>1.3.0</org.chromattic.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.12</org.codehaus.groovy.version>
     <org.cometd.version>6.0.7</org.cometd.version>
@@ -131,22 +98,17 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.eclipse.jetty-client>10.0.11</version.eclipse.jetty-client>
 
     <org.exoplatform.framework.junit.version>1.2.4-GA</org.exoplatform.framework.junit.version>
-    <org.hamcrest.version>1.3</org.hamcrest.version>
     <org.hibernate.common.hibernate-commons-annotations.version>5.1.2.Final</org.hibernate.common.hibernate-commons-annotations.version>
     <org.hibernate.hibernate-core.version>5.6.3.Final</org.hibernate.hibernate-core.version>
     <org.hibernate.hibernate-entitymanager.version>5.6.3.Final</org.hibernate.hibernate-entitymanager.version>
     <org.hsqldb.version>2.7.1</org.hsqldb.version>
-    <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.infinispan.version>8.2.6.Final</org.infinispan.version>
     <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
     <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
     <org.jboss.jbossts.version>4.16.6.Final</org.jboss.jbossts.version>
     <org.javassist.version>3.28.0-GA</org.javassist.version>
-    <org.jboss.byteman.version>2.0.4</org.jboss.byteman.version>
-    <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
     <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
-    <org.jboss.portletbridge.version>3.3.1.Final</org.jboss.portletbridge.version>
     <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
@@ -155,8 +117,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>4.9.1</org.liquibase.version>
     <org.mockito.version>3.11.1</org.mockito.version>
-    <org.powermock.version>2.0.9</org.powermock.version>
-    <org.easymock.version>2.5</org.easymock.version>
     <org.ogce.xpp3.version>1.1.6</org.ogce.xpp3.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.picketlink.federation.version>2.5.5.Final</org.picketlink.federation.version>
@@ -165,17 +125,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.log4j.api.version>2.18.0</org.log4j.api.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
-    <org.testng.version>7.7.0</org.testng.version>
-    <org.w3c.sac.version>1.3</org.w3c.sac.version>
     <org.web3j.version>4.9.4</org.web3j.version>
-    <org.xcmis.version>1.3.0</org.xcmis.version>
-    <org.xhtmlrenderer.flying-saucer.version>9.0.8</org.xhtmlrenderer.flying-saucer.version>
     <portals-bridges.version>1.0.4</portals-bridges.version>
-    <picocontainer.version>1.1</picocontainer.version>
     <quartz.version>2.3.2</quartz.version>
-    <rome.version>1.18.0</rome.version>
     <xerces.version>2.12.2</xerces.version>
-    <xpp3.version>1.1.4c</xpp3.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
@@ -183,27 +136,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.javax.resource>1.7.1</version.javax.resource>
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
-    <version.cdi.spec>1.0-SP4</version.cdi.spec>
-    <version.concurrent>1.3.4</version.concurrent>
-    <version.rhino>1.7R2</version.rhino>
-    <version.nuhtmlparser>1.0.7</version.nuhtmlparser>
-    <version.caja.caja>r5054</version.caja.caja>
-    <version.caja.json>r1</version.caja.json>
+    <version.cdi.spec>2.0.SP1</version.cdi.spec>
     <version.org.antlr>3.5.2</version.org.antlr>
     <version.antlr>2.7.6rc1</version.antlr>
-    <version.aopalliance>1.0</version.aopalliance>
-    <version.asm>3.3.1</version.asm>
-    <version.cglib>2.2</version.cglib>
-    <version.ehcache>2.2.0</version.ehcache>
-    <version.jhlabs>2.0.235</version.jhlabs>
-    <version.htmlparser>2.1</version.htmlparser>
-    <version.jsecurity>0.9.0</version.jsecurity>
     <version.xml-apis>1.4.01</version.xml-apis>
     <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
     <version.apache.commons-pool>1.6</version.apache.commons-pool>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
     <version.apache.commons-digester>2.1</version.apache.commons-digester>
-    <version.apache.commons-logging>1.2</version.apache.commons-logging>
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
     <version.google.oauth.client>1.33.3</version.google.oauth.client>
@@ -213,8 +153,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.jackson.core>2.13.2</version.jackson.core>
-    <version.codehaus.jackson.core.asl>1.9.13</version.codehaus.jackson.core.asl>
-    <version.reflext>1.1.0</version.reflext>
     <version.scribejava>6.9.0</version.scribejava>
     <org.lombok.version>1.18.24</org.lombok.version>
     <org.gatein.api.version>1.0.1.Final</org.gatein.api.version>
@@ -224,8 +162,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.gatein.common.version>2.2.2.Final</org.gatein.common.version>
     <org.gatein.captcha.version>1.1.1.Final-gatein-4</org.gatein.captcha.version>
     <!-- 3rd party deprecated libraries versions -->
-    <org.ow2.jotm.version>2.1.9</org.ow2.jotm.version>
-    <ow2-jta-1.1-spec.version>1.0.13</ow2-jta-1.1-spec.version>
     <transactions-jta.version>3.8.0</transactions-jta.version>
     <com.experlog.xapool.version>1.5.0</com.experlog.xapool.version>
     <!-- For testing only -->
@@ -247,44 +183,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${ch.qos.logback.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>${com.google.guava.version}</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.javascript</groupId>
         <artifactId>closure-compiler</artifactId>
         <version>${com.google.javascript.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.google.gwt</groupId>
-        <artifactId>gwt-dev</artifactId>
-        <version>${com.google.gwt.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.gwt</groupId>
-        <artifactId>gwt-servlet</artifactId>
-        <version>${com.google.gwt.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.gwt</groupId>
-        <artifactId>gwt-user</artifactId>
-        <version>${com.google.gwt.version}</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
         <version>${com.google.code.guice.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>com.google.inject.extensions</groupId>
-         <artifactId>guice-jmx</artifactId>
-         <version>${com.google.code.guice.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>com.google.inject.extensions</groupId>
-         <artifactId>guice-multibindings</artifactId>
-         <version>${com.google.code.guice.version}</version>
       </dependency>
       <dependency>
         <groupId>com.googlecode.json-simple</groupId>
@@ -307,31 +213,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>com.ibm.icu</groupId>
         <artifactId>icu4j</artifactId>
         <version>${com.ibm.icu.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>com.isomorphic.smartgwt.lgpl</groupId>
-         <artifactId>smartgwt-lgpl</artifactId>
-       <version>${com.isomorphic.smartgwt.lgpl.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.lowagie</groupId>
-        <artifactId>itext</artifactId>
-        <version>${com.lowagie.itext.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.stream</groupId>
-        <artifactId>sjsxp</artifactId>
-        <version>${com.sun.xml.stream.version}</version>
-      </dependency>
-      <dependency>
-          <groupId>com.sun.jersey</groupId>
-          <artifactId>jersey-client</artifactId>
-          <version>${com.sun.xml.jersey-client.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.totsp.feedpod</groupId>
-        <artifactId>itunes-com-podcast</artifactId>
-        <version>${com.totsp.feepod.itunes-com-podcast.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -406,17 +287,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
          <version>${version.apache.commons-digester}</version>
       </dependency>
       <dependency>
-         <groupId>commons-logging</groupId>
-         <artifactId>commons-logging</artifactId>
-         <version>${version.apache.commons-logging}</version>
-         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.dom4j</groupId>
-        <artifactId>dom4j</artifactId>
-        <version>${dom4j.version}</version>
-      </dependency>
-      <dependency>
         <groupId>ecs</groupId>
         <artifactId>ecs</artifactId>
         <version>${ecs.version}</version>
@@ -425,11 +295,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>eu.medsea.mimeutil</groupId>
         <artifactId>mime-util</artifactId>
         <version>${mime-util.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>ical4j</groupId>
-        <artifactId>ical4j</artifactId>
-        <version>${ical4j.version}</version>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
@@ -477,16 +342,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${javax.inject.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.jcr</groupId>
-        <artifactId>jcr</artifactId>
-        <version>${javax.jcr.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.spec.javax.rmi</groupId>
-        <artifactId>jboss-rmi-api_1.0_spec</artifactId>
-        <version>${javax.rmi.version}</version>
-      </dependency>
-      <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${com.sun.mail.version}</version>
@@ -527,19 +382,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${javax.transaction.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.validation</groupId>
-        <artifactId>validation-api</artifactId>
-        <version>${javax.validation.version}</version>
-      </dependency>
-      <dependency>
         <groupId>javax.ws.rs</groupId>
         <artifactId>jsr311-api</artifactId>
         <version>${javax.ws.rs.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.xml.stream</groupId>
-        <artifactId>stax-api</artifactId>
-        <version>${javax.xml.stream.stax-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.ccpp</groupId>
@@ -547,19 +392,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${javax.ccpp.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.websocket</groupId>
-        <artifactId>javax.websocket-api</artifactId>
-        <version>${javax.websocket-api.version}</version>
-      </dependency>
-      <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
         <version>${version.jaxb}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.json</groupId>
-        <artifactId>javax.json-api</artifactId>
-        <version>${javax.json.api.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
@@ -567,23 +402,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${version.jaxb.impl}</version>
       </dependency>
       <dependency>
-        <groupId>jaxen</groupId>
-        <artifactId>jaxen</artifactId>
-        <version>${jaxen.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jmock</groupId>
-        <artifactId>jmock</artifactId>
-        <version>${jmock.version}</version>
-      </dependency>
-      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit-dep</artifactId>
         <version>${junit.version}</version>
       </dependency>
       <dependency>
@@ -592,59 +412,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${jsoup.version}</version>
       </dependency>
       <dependency>
-        <groupId>net.java.dev.jna</groupId>
-        <artifactId>jna</artifactId>
-        <version>${net.java.dev.jna}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.oauth.core</groupId>
-        <artifactId>oauth</artifactId>
-        <version>${net.oauth.core.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sourceforge.cssparser</groupId>
-        <artifactId>cssparser</artifactId>
-        <version>${net.sourceforge.cssparser.version}</version>
-      </dependency>
-      <dependency>
         <groupId>net.sourceforge.nekohtml</groupId>
         <artifactId>nekohtml</artifactId>
         <version>${net.sourceforge.nekohtml.version}</version>
       </dependency>
       <dependency>
-        <groupId>net.sourceforge.htmlcleaner</groupId>
-        <artifactId>htmlcleaner</artifactId>
-        <version>${net.sourceforge.htmlcleaner.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>nu.validator.htmlparser</groupId>
-         <artifactId>htmlparser</artifactId>
-         <version>${version.nuhtmlparser}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.htmlparser</groupId>
-        <artifactId>htmllexer</artifactId>
-        <version>${version.htmlparser}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.htmlparser</groupId>
-        <artifactId>htmlparser</artifactId>
-        <version>${version.htmlparser}</version>
-      </dependency>
-      <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-collections4</artifactId>
-        <version>${commons-collections4.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.geronimo.specs</groupId>
-        <artifactId>geronimo-stax-api_1.0_spec</artifactId>
-        <version>${org.apache.geronimo.specs.geronimo-stax-api_1.0_spec.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -658,40 +433,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpcore</artifactId>
-        <version>${org.apache.httpcomponents.httpcore.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.apache.portals.bridges</groupId>
         <artifactId>portals-bridges-common</artifactId>
         <version>${portals-bridges.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.jackrabbit</groupId>
-        <artifactId>jackrabbit-webdav</artifactId>
-        <version>${org.apache.jackrabbit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.jackrabbit</groupId>
-        <artifactId>jackrabbit-jcr-tests</artifactId>
-        <classifier>sources</classifier>
-        <version>${org.apache.jackrabbit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-core</artifactId>
-        <version>${org.apache.lucene.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-spellchecker</artifactId>
-        <version>${org.apache.lucene.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pdfbox</groupId>
-        <artifactId>pdfbox</artifactId>
-        <version>${org.apache.pdfbox.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
@@ -716,164 +460,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-ooxml-full</artifactId>
-        <version>${org.apache.poi.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-scratchpad</artifactId>
-        <version>${org.apache.poi.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tika</groupId>
-        <artifactId>tika-core</artifactId>
-        <version>${org.apache.tika.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tika</groupId>
-        <artifactId>tika-parsers</artifactId>
-        <version>${org.apache.tika.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>jakarta.ws.rs</groupId>
-            <artifactId>jakarta.ws.rs-api</artifactId>
-          </exclusion>
-          <exclusion>
-            <artifactId>commons-logging</artifactId>
-            <groupId>commons-logging</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>jaxb-runtime</artifactId>
-            <groupId>org.glassfish.jaxb</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>jackson-annotations</artifactId>
-            <groupId>com.fasterxml.jackson.core</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>woodstox-core</artifactId>
-            <groupId>com.fasterxml.woodstox</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>asm</artifactId>
-            <groupId>org.ow2.asm</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>jackson-databind</artifactId>
-            <groupId>com.fasterxml.jackson.core</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>gson</artifactId>
-            <groupId>com.google.code.gson</groupId>
-          </exclusion>
-          <exclusion>
-            <artifactId>jackson-core</artifactId>
-            <groupId>com.fasterxml.jackson.core</groupId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.ws.commons</groupId>
-        <artifactId>ws-commons-util</artifactId>
-        <version>${org.apache.ws.commons.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.xmlbeans</groupId>
-        <artifactId>xmlbeans</artifactId>
-        <version>${org.apache.xmlbeans.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.artofsolving.jodconverter</groupId>
-        <artifactId>jodconverter-core</artifactId>
-        <version>${org.artofsolving.jodconverter.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
         <version>${org.aspectj.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>cglib</groupId>
-        <artifactId>cglib</artifactId>
-        <version>${version.cglib}</version>
-      </dependency>
-      <dependency>
-        <groupId>oswego-concurrent</groupId>
-        <artifactId>concurrent</artifactId>
-        <version>${version.concurrent}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sf.ehcache</groupId>
-        <artifactId>ehcache-core</artifactId>
-        <version>${version.ehcache}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.jhlabs</groupId>
-        <artifactId>filters</artifactId>
-        <version>${version.jhlabs}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15on</artifactId>
-        <version>${org.bouncycastle.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.api</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.apt</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.common</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.core</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.dataobject</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.ext</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.groovy</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.metamodel</artifactId>
-        <version>${org.chromattic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.chromattic</groupId>
-        <artifactId>chromattic.spi</artifactId>
-        <version>${org.chromattic.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
@@ -904,11 +493,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
         <version>${org.codehaus.groovy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-core-asl</artifactId>
-        <version>${version.codehaus.jackson.core.asl}</version>
       </dependency>
       <!-- Required by conditional processing in logback -->
       <dependency>
@@ -980,11 +564,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.exoplatform.framework.junit.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-all</artifactId>
-        <version>${org.hamcrest.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>${org.hibernate.hibernate-core.version}</version>
@@ -1028,11 +607,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.hsqldb.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.icepdf.os</groupId>
-        <artifactId>icepdf-core</artifactId>
-        <version>${org.icepdf.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.imgscalr</groupId>
         <artifactId>imgscalr-lib</artifactId>
         <version>${org.imgscalr.version}</version>
@@ -1070,29 +644,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.javassist.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-common-core</artifactId>
-        <version>${org.jboss.jboss-commons.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
         <version>${org.jboss.jboss-logging.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.byteman</groupId>
-        <artifactId>byteman</artifactId>
-        <version>${org.jboss.byteman.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.byteman</groupId>
-        <artifactId>byteman-bmunit</artifactId>
-        <version>${org.jboss.byteman.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.byteman</groupId>
-        <artifactId>byteman-install</artifactId>
-        <version>${org.jboss.byteman.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.jbossts</groupId>
@@ -1101,34 +655,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <!-- Portlet Bridge -->
       <dependency>
-        <groupId>org.jboss.portletbridge</groupId>
-        <artifactId>portletbridge-api</artifactId>
-        <version>${org.jboss.portletbridge.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.portletbridge</groupId>
-        <artifactId>portletbridge-impl</artifactId>
-        <version>${org.jboss.portletbridge.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.jgroups</groupId>
         <artifactId>jgroups</artifactId>
         <version>${jgroups.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jsecurity</groupId>
-        <artifactId>jsecurity</artifactId>
-        <version>${version.jsecurity}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jibx</groupId>
-        <artifactId>jibx-bind</artifactId>
-        <version>${org.jibx.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jibx</groupId>
-        <artifactId>jibx-extras</artifactId>
-        <version>${org.jibx.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jibx</groupId>
@@ -1137,33 +666,13 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.antlr</groupId>
-        <artifactId>antlr</artifactId>
-        <version>${version.org.antlr}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.antlr</groupId>
         <artifactId>antlr-runtime</artifactId>
-        <version>${version.org.antlr}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.antlr</groupId>
-        <artifactId>gunit</artifactId>
         <version>${version.org.antlr}</version>
       </dependency>
       <dependency>
         <groupId>antlr</groupId>
         <artifactId>antlr</artifactId>
         <version>${version.antlr}</version>
-      </dependency>
-      <dependency>
-        <groupId>aopalliance</groupId>
-        <artifactId>aopalliance</artifactId>
-        <version>${version.aopalliance}</version>
-      </dependency>
-      <dependency>
-        <groupId>asm</groupId>
-        <artifactId>asm</artifactId>
-        <version>${version.asm}</version>
       </dependency>
       <dependency>
         <groupId>org.json</groupId>
@@ -1196,6 +705,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.juzu.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-plugins-validation</artifactId>
+        <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-plugins-webjars</artifactId>
+        <version>${org.juzu.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.github.scribejava</groupId>
         <artifactId>scribejava-apis</artifactId>
         <version>${version.scribejava}</version>
@@ -1217,16 +736,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-validation</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-webjars</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.liquibase</groupId>
         <artifactId>liquibase-core</artifactId>
         <version>${org.liquibase.version}</version>
@@ -1240,26 +749,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.mockito</groupId>
         <artifactId>mockito-inline</artifactId>
         <version>${org.mockito.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.powermock</groupId>
-        <artifactId>powermock-module-junit4</artifactId>
-        <version>${org.powermock.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.powermock</groupId>
-        <artifactId>powermock-api-mockito2</artifactId>
-        <version>${org.powermock.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.powermock</groupId>
-        <artifactId>powermock-api-easymock</artifactId>
-        <version>${org.powermock.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.easymock</groupId>
-        <artifactId>easymock</artifactId>
-        <version>${org.easymock.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ogce</groupId>
@@ -1358,32 +847,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
       </dependency>
-      <!-- Reflext -->
-      <dependency>
-        <groupId>org.reflext</groupId>
-        <artifactId>reflext.api</artifactId>
-        <version>${version.reflext}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.reflext</groupId>
-        <artifactId>reflext.apt</artifactId>
-        <version>${version.reflext}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.reflext</groupId>
-        <artifactId>reflext.core</artifactId>
-        <version>${version.reflext}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.reflext</groupId>
-        <artifactId>reflext.jlr</artifactId>
-        <version>${version.reflext}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.reflext</groupId>
-        <artifactId>reflext.spi</artifactId>
-        <version>${version.reflext}</version>
-      </dependency>
       <!-- dependency is here because Apache POI needs log4j-api.-->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
@@ -1419,16 +882,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.suigeneris</groupId>
         <artifactId>jrcs.rcs</artifactId>
         <version>${org.suigeneris.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>${org.testng.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.w3c</groupId>
-        <artifactId>sac</artifactId>
-        <version>${org.w3c.sac.version}</version>
       </dependency>
       <dependency>
         <groupId>org.web3j</groupId>
@@ -1467,66 +920,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-renditions</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-restatom</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-search-model</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-search-parser-cmis</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-search-service</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xcmis</groupId>
-        <artifactId>xcmis-spi</artifactId>
-        <version>${org.xcmis.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xhtmlrenderer</groupId>
-        <artifactId>flying-saucer-core</artifactId>
-        <version>${org.xhtmlrenderer.flying-saucer.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xhtmlrenderer</groupId>
-        <artifactId>flying-saucer-pdf</artifactId>
-        <version>${org.xhtmlrenderer.flying-saucer.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>picocontainer</groupId>
-        <artifactId>picocontainer</artifactId>
-        <version>${picocontainer.version}</version>
-        <exclusions>
-          <exclusion>
-            <!-- xstream dependency is an old version (1.0.2)
-            when trying to update version for xstream for security reason,
-            it seems that xstream in picocontainer is used for test purpose,
-            so we exclude the dependency-->
-            <groupId>xstream</groupId>
-            <artifactId>xstream</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>com.rometools</groupId>
-        <artifactId>rome</artifactId>
-        <version>${rome.version}</version>
-      </dependency>
-      <dependency>
         <groupId>xerces</groupId>
         <artifactId>xercesImpl</artifactId>
         <version>${xerces.version}</version>
@@ -1536,33 +929,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>xml-apis</artifactId>
         <version>${version.xml-apis}</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>caja</groupId>
-        <artifactId>caja</artifactId>
-        <version>${version.caja.caja}</version>
-        <exclusions>
-           <!-- force use of xml-apis until caja fixes their pom -->
-          <exclusion>
-              <groupId>xerces</groupId>
-              <artifactId>xmlParserAPIs</artifactId>
-           </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>caja</groupId>
-        <artifactId>json_simple</artifactId>
-        <version>${version.caja.json}</version>
-      </dependency>
-      <dependency>
-        <groupId>rhino</groupId>
-        <artifactId>js</artifactId>
-        <version>${version.rhino}</version>
-      </dependency>
-      <dependency>
-        <groupId>xpp3</groupId>
-        <artifactId>xpp3</artifactId>
-        <version>${xpp3.version}</version>
       </dependency>
       <!-- OAuth integration with Twitter -->
       <dependency>
@@ -1764,16 +1130,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.jboss.negotiation.version}</version>
       </dependency>
       <!-- Third party dependencies used by deprecated services  -->
-      <dependency>
-        <groupId>org.ow2.jotm</groupId>
-        <artifactId>jotm-core</artifactId>
-        <version>${org.ow2.jotm.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ow2.spec.ee</groupId>
-        <artifactId>ow2-jta-1.1-spec</artifactId>
-        <version>${ow2-jta-1.1-spec.version}</version>
-      </dependency>
       <dependency>
         <groupId>com.experlog</groupId>
         <artifactId>xapool</artifactId>
