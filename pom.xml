@@ -112,7 +112,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
-    <org.json.version>20220320</org.json.version>
+    <org.json.version>20230618</org.json.version>
     <org.juzu.version>1.2.0</org.juzu.version>
     <org.less4j.version>1.17.2</org.less4j.version>
     <org.liquibase.version>4.9.1</org.liquibase.version>
@@ -170,7 +170,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <org.apache.tomcat.version>9.0.73</org.apache.tomcat.version>
+    <org.apache.tomcat.version>9.0.78</org.apache.tomcat.version>
     <com.fasterxml.jackson.version>2.13.5</com.fasterxml.jackson.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
