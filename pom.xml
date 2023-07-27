@@ -89,6 +89,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
     <org.apache.poi.version>5.2.2</org.apache.poi.version>
     <org.aspectj.version>1.8.8</org.aspectj.version>
+    <org.bouncycastle.version>1.67</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.12</org.codehaus.groovy.version>
     <org.cometd.version>6.0.7</org.cometd.version>
@@ -463,6 +464,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
         <version>${org.aspectj.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>${org.bouncycastle.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
