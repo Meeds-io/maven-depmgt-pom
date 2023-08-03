@@ -1162,6 +1162,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${com.fasterxml.jackson.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.fasterxml.jackson.datatype</groupId>
+        <artifactId>jackson-datatype-jsr310</artifactId>
+        <version>${com.fasterxml.jackson.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js</artifactId>
         <version>${org.graalvm.js.version}</version>
