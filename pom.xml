@@ -25,7 +25,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-pom</artifactId>
-  <version>22.x-SNAPSHOT</version>
+  <version>23.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
