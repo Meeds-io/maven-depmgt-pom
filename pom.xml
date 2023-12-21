@@ -47,26 +47,22 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <spring-boot-dependencies.version>3.2.0</spring-boot-dependencies.version>
+    <spring-boot-dependencies.version>3.2.1</spring-boot-dependencies.version>
     <com.google.javascript.version>v20220104</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20220608.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
+    <liquibase-slf4j.version>5.0.0</liquibase-slf4j.version>
     <legacy.commons-chain.version>1.3.0</legacy.commons-chain.version>
-    <commons-codec.version>1.10</commons-codec.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-fileupload2.version>2.0.0-M1</commons-fileupload2.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
-    <commons-io.version>2.13.0</commons-io.version>
-    <commons-lang.version>2.6</commons-lang.version>
-    <commons-lang3.version>3.11</commons-lang3.version>
+    <commons-io.version>2.15.1</commons-io.version>
     <ecs.version>1.4.2</ecs.version>
     <!-- Additional LOGBACK dependencies -->
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
-    <!-- PLF-6409: Liquibase dependency -->
-    <org.snakeyaml.version>2.0</org.snakeyaml.version>
     <mime-util.version>2.1.3</mime-util.version>
-    <io.swagger.version>2.2.1</io.swagger.version>
+    <io.swagger.version>2.2.19</io.swagger.version>
     <io.jsonwebtoken.version>0.11.5</io.jsonwebtoken.version>
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
@@ -78,15 +74,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
     <!-- 1.1.3 used by jdom has some wrong dependencies -->
     <jgroups.version>3.6.13.Final</jgroups.version>
-    <junit.version>4.13.2</junit.version>
     <jsoup.version>1.15.3</jsoup.version>
-    <net.sourceforge.nekohtml.version>1.9.22</net.sourceforge.nekohtml.version>
-    <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
-    <org.apache.poi.version>5.2.2</org.apache.poi.version>
-    <org.aspectj.version>1.8.8</org.aspectj.version>
+    <org.apache.poi.version>5.2.5</org.apache.poi.version>
     <org.bouncycastle.version>1.70</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
-    <org.codehaus.groovy.version>2.4.12</org.codehaus.groovy.version>
+    <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
     <org.cometd.version>7.0.11</org.cometd.version>
     <!--
       jetty-client is a dependency coming from cometd. as we use cometd, the version for jetty is 11.0.18.
@@ -94,29 +86,23 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     -->
     <jetty.version>11.0.18</jetty.version>
 
-    <org.hibernate.common.hibernate-commons-annotations.version>5.1.2.Final</org.hibernate.common.hibernate-commons-annotations.version>
-    <org.hibernate.hibernate-core.version>5.6.15.Final</org.hibernate.hibernate-core.version>
-    <org.hsqldb.version>2.7.1</org.hsqldb.version>
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.infinispan.version>8.2.6.Final</org.infinispan.version>
     <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
     <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
     <org.jboss.jbossts.version>4.16.6.Final</org.jboss.jbossts.version>
-    <org.javassist.version>3.28.0-GA</org.javassist.version>
+    <org.javassist.version>3.30.1-GA</org.javassist.version>
     <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
     <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <!-- The library must follow the plugin version -->
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20231013</org.json.version>
     <org.less4j.version>1.17.2</org.less4j.version>
-    <org.liquibase.version>4.9.1</org.liquibase.version>
     <org.mockito.version>3.11.1</org.mockito.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
-    <org.log4j.api.version>2.18.0</org.log4j.api.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
     <org.web3j.version>4.9.4</org.web3j.version>
-    <quartz.version>2.3.2</quartz.version>
     <xerces.version>2.12.2</xerces.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
@@ -130,7 +116,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.antlr>2.7.6rc1</version.antlr>
     <version.xml-apis>1.4.01</version.xml-apis>
     <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
-    <version.apache.commons-pool>1.6</version.apache.commons-pool>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
     <version.apache.commons-digester>2.1</version.apache.commons-digester>
     <version.twitter4j>3.0.5</version.twitter4j>
@@ -142,7 +127,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.scribejava>6.9.0</version.scribejava>
-    <org.lombok.version>1.18.24</org.lombok.version>
     <org.gatein.api.version>1.0.1.Final</org.gatein.api.version>
     <org.gatein.mop.version>1.3.2.Final</org.gatein.mop.version>
     <org.gatein.mgmt.version>2.1.0.Final</org.gatein.mgmt.version>
@@ -158,7 +142,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <org.apache.tomcat.version>10.1.17</org.apache.tomcat.version>
+    <tomcat.version>10.1.17</tomcat.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
   <dependencyManagement>
@@ -211,11 +195,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${legacy.commons-chain.version}</version>
       </dependency>
       <dependency>
-        <groupId>commons-codec</groupId>
-        <artifactId>commons-codec</artifactId>
-        <version>${commons-codec.version}</version>
-      </dependency>
-      <dependency>
         <groupId>commons-collections</groupId>
         <artifactId>commons-collections</artifactId>
         <version>${commons-collections.version}</version>
@@ -240,22 +219,22 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
           </exclusion>
         </exclusions>
       </dependency>
+      <!-- Used in Test scope only -->
       <dependency>
         <groupId>commons-dbcp</groupId>
         <artifactId>commons-dbcp</artifactId>
         <version>${version.apache.commons-dbcp}</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-         <groupId>commons-pool</groupId>
-         <artifactId>commons-pool</artifactId>
-         <version>${version.apache.commons-pool}</version>
-         <exclusions>
-            <exclusion>
-               <groupId>xerces</groupId>
-               <artifactId>xerces</artifactId>
-            </exclusion>
-         </exclusions>
+        <exclusions>
+          <exclusion>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
@@ -263,14 +242,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${commons-io.version}</version>
       </dependency>
       <dependency>
-        <groupId>commons-lang</groupId>
-        <artifactId>commons-lang</artifactId>
-        <version>${commons-lang.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>commons-digester</groupId>
-         <artifactId>commons-digester</artifactId>
-         <version>${version.apache.commons-digester}</version>
+        <groupId>commons-digester</groupId>
+        <artifactId>commons-digester</artifactId>
+        <version>${version.apache.commons-digester}</version>
       </dependency>
       <dependency>
         <groupId>ecs</groupId>
@@ -284,18 +258,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
-        <artifactId>swagger-annotations</artifactId>
+        <artifactId>swagger-annotations-jakarta</artifactId>
         <version>${io.swagger.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-jaxrs2</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>annotations</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
@@ -312,67 +276,56 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jjwt-jackson</artifactId>
         <version>${io.jsonwebtoken.version}</version>
       </dependency>
+      <!-- \\\ -->
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.activation</groupId>
         <artifactId>javax.activation-api</artifactId>
         <version>${javax.activation-api.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>jsr250-api</artifactId>
         <version>${javax.annotation.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.inject</groupId>
         <artifactId>javax.inject</artifactId>
         <version>${javax.inject.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${com.sun.mail.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>javax.mail-api</artifactId>
         <version>${version.javax.mail}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
         <version>${version.cdi.spec}</version>
       </dependency>
-      <dependency>
-        <groupId>javax.portlet</groupId>
-        <artifactId>portlet-api</artifactId>
-        <version>${javax.portlet.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet</groupId>
-        <artifactId>jakarta.servlet-api</artifactId>
-        <version>${jakarta.servlet.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet.jsp</groupId>
-        <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>${jakarta.servlet.jsp.version}</version>
-      </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.resource</groupId>
         <artifactId>javax.resource-api</artifactId>
         <version>${version.javax.resource}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.transaction</groupId>
         <artifactId>javax.transaction-api</artifactId>
         <version>${javax.transaction.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.ws.rs</groupId>
         <artifactId>jsr311-api</artifactId>
@@ -383,6 +336,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>ccpp</artifactId>
         <version>${javax.ccpp.version}</version>
       </dependency>
+      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
@@ -393,47 +347,24 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jaxb-impl</artifactId>
         <version>${version.jaxb.impl}</version>
       </dependency>
+      <!-- /// -->
+      <!-- Used artifact to extract javax.portlet classes and transform to a compliant Jakarta EE JAR -->
       <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
+        <groupId>javax.portlet</groupId>
+        <artifactId>portlet-api</artifactId>
+        <classifier>sources</classifier>
+        <version>${javax.portlet.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
         <version>${jsoup.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sourceforge.nekohtml</groupId>
-        <artifactId>nekohtml</artifactId>
-        <version>${net.sourceforge.nekohtml.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${commons-lang3.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>${org.apache.httpcomponents.httpclient.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpmime</artifactId>
-        <version>${org.apache.httpcomponents.httpclient.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
@@ -458,40 +389,42 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjrt</artifactId>
-        <version>${org.aspectj.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
         <version>${org.bouncycastle.version}</version>
       </dependency>
+      <!-- Used in Test scope for cometd -->
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-core-api-container</artifactId>
         <version>${org.codehaus.cargo.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-core-api-generic</artifactId>
         <version>${org.codehaus.cargo.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-core-api-util</artifactId>
         <version>${org.codehaus.cargo.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-core-container-jetty</artifactId>
         <version>${org.codehaus.cargo.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-core-container-tomcat</artifactId>
         <version>${org.codehaus.cargo.version}</version>
+        <scope>test</scope>
       </dependency>
+      <!-- TODO: move to org.apache.groovy:groovy-all -->
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
@@ -503,12 +436,13 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jansi</artifactId>
         <version>${org.fusesource.jansi.version}</version>
       </dependency>
-      <!-- PLF-6409: Required by Liquibase to not generate error -->
+      <!-- Used to have Liquibase logging over logback -->
       <dependency>
-        <groupId>org.yaml</groupId>
-        <artifactId>snakeyaml</artifactId>
-        <version>${org.snakeyaml.version}</version>
+        <groupId>com.mattbertolini</groupId>
+        <artifactId>liquibase-slf4j</artifactId>
+        <version>${liquibase-slf4j.version}</version>
       </dependency>
+      <!-- cometd -->
       <dependency>
         <groupId>org.cometd.java</groupId>
         <artifactId>cometd-java-api-common</artifactId>
@@ -550,6 +484,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.cometd.version}</version>
         <type>war</type>
       </dependency>
+      <!--
+        jetty-client is a dependency coming from cometd. as we use cometd, the version for jetty is 11.0.18.
+        (To Override Spring dependencies)
+      -->
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-io</artifactId>
@@ -575,33 +513,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jetty-alpn-client</artifactId>
         <version>${jetty.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>${org.hibernate.hibernate-core.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.jboss.spec.javax.transaction</groupId>
-            <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.hibernate.common</groupId>
-        <artifactId>hibernate-commons-annotations</artifactId>
-        <version>${org.hibernate.common.hibernate-commons-annotations.version}</version>
-        <exclusions>
-          <exclusion>
-            <artifactId>xml-apis</artifactId>
-            <groupId>xml-apis</groupId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.hsqldb</groupId>
-        <artifactId>hsqldb</artifactId>
-        <version>${org.hsqldb.version}</version>
-      </dependency>
+      <!-- Used for Captcha -->
       <dependency>
         <groupId>org.imgscalr</groupId>
         <artifactId>imgscalr-lib</artifactId>
@@ -696,11 +608,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.liquibase</groupId>
-        <artifactId>liquibase-core</artifactId>
-        <version>${org.liquibase.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>${org.mockito.version}</version>
@@ -763,30 +670,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
-        <groupId>org.picketlink.idm.testsuite</groupId>
-        <artifactId>common</artifactId>
-        <version>${org.picketlink.idm.version}</version>
-        <type>test-jar</type>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.picketlink.idm.testsuite</groupId>
-        <artifactId>common</artifactId>
-        <version>${org.picketlink.idm.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.quartz-scheduler</groupId>
-        <artifactId>quartz</artifactId>
-        <version>${quartz.version}</version>
-      </dependency>
       <!-- dependency is here because Apache POI needs log4j-api.-->
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>${org.log4j.api.version}</version>
-      </dependency>
       <dependency>
         <groupId>org.staxnav</groupId>
         <artifactId>staxnav.core</artifactId>
@@ -802,6 +686,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>jrcs.rcs</artifactId>
         <version>${org.suigeneris.version}</version>
       </dependency>
+      <!-- Web3j dependencies -->
       <dependency>
         <groupId>org.web3j</groupId>
         <artifactId>core</artifactId>
@@ -837,11 +722,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>tuples</artifactId>
         <version>${org.web3j.version}</version>
         <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>xerces</groupId>
-        <artifactId>xercesImpl</artifactId>
-        <version>${xerces.version}</version>
       </dependency>
       <dependency>
         <groupId>xml-apis</groupId>
@@ -904,12 +784,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${version.japex}</version>
         <scope>test</scope>
       </dependency>
-      <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>${org.lombok.version}</version>
-        <scope>provided</scope>
-      </dependency>
       <!-- GateIn API -->
       <dependency>
         <groupId>org.gatein.api</groupId>
@@ -964,23 +838,23 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat</artifactId>
-        <version>${org.apache.tomcat.version}</version>
+        <version>${tomcat.version}</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-catalina</artifactId>
-        <version>${org.apache.tomcat.version}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-core</artifactId>
-        <version>${org.apache.tomcat.version}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-jasper</artifactId>
-        <version>${org.apache.tomcat.version}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <!-- Arquillian/Shrinkwrap stack -->
       <dependency>
