@@ -730,6 +730,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${org.web3j.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.web3j</groupId>
+        <artifactId>web3j-unit</artifactId>
+        <version>${org.web3j.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>xml-apis</groupId>
         <artifactId>xml-apis</artifactId>
         <version>${version.xml-apis}</version>
