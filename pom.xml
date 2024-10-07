@@ -114,7 +114,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
     <version.cdi.spec>2.0.SP1</version.cdi.spec>
-    <version.org.antlr>3.5.2</version.org.antlr>
+    <version.org.antlr>3.5.3</version.org.antlr>
     <version.antlr>2.7.6rc1</version.antlr>
     <version.xml-apis>1.4.01</version.xml-apis>
     <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
