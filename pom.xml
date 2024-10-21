@@ -86,7 +86,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       jetty-client is a dependency coming from cometd. as we use cometd, the version for jetty is 11.0.18.
       (To Override Spring dependencies)
     -->
-    <jetty.version>11.0.18</jetty.version>
+    <jetty.version>12.0.14</jetty.version>
 
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.infinispan.version>8.2.6.Final</org.infinispan.version>
