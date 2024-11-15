@@ -76,7 +76,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <jsoup.version>1.15.3</jsoup.version>
     <org.apache.poi.version>5.2.5</org.apache.poi.version>
     <org.bouncycastle.version>1.70</org.bouncycastle.version>
-    <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
+    <org.codehaus.cargo.version>1.10.15</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
     <org.cometd.version>7.0.11</org.cometd.version>
     <!--
