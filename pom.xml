@@ -106,7 +106,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
     <version.cdi.spec>2.0.SP1</version.cdi.spec>
-    <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
+    <version.apache.commons-beanutils>1.11.0</version.apache.commons-beanutils>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
