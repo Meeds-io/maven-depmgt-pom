@@ -47,15 +47,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <spring-boot-dependencies.version>3.3.4</spring-boot-dependencies.version>
-    <com.google.javascript.version>v20220104</com.google.javascript.version>
+    <spring-boot-dependencies.version>3.5.3</spring-boot-dependencies.version>
+    <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
-    <com.googlecode.owasp-java-html-sanitizer.version>20220608.1</com.googlecode.owasp-java-html-sanitizer.version>
+    <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-fileupload2.version>2.0.0-M1</commons-fileupload2.version>
-    <commons-httpclient.version>3.1</commons-httpclient.version>
-    <commons-io.version>2.15.1</commons-io.version>
+    <commons-io.version>2.19.0</commons-io.version>
     <ecs.version>1.4.2</ecs.version>
     <!-- Additional LOGBACK dependencies -->
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
@@ -69,21 +68,21 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
     <jakarta.servlet.jsp.version>3.1.1</jakarta.servlet.jsp.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
-    <!-- Overridden from Spring due to bug Meeds-io/meeds#1582 -->
-    <liquibase.version>4.25.1</liquibase.version>
-    <liquibase-slf4j.version>5.0.0</liquibase-slf4j.version>
-    <!-- 1.1.3 used by jdom has some wrong dependencies -->
-    <jsoup.version>1.15.3</jsoup.version>
-    <org.apache.poi.version>5.2.5</org.apache.poi.version>
-    <org.bouncycastle.version>1.70</org.bouncycastle.version>
+    <!-- Used to have Liquibase logging over logback -->
+    <liquibase-slf4j.version>5.1.0</liquibase-slf4j.version>
+    <!-- used by jdom has some wrong dependencies -->
+    <jsoup.version>1.20.1</jsoup.version>
+    <org.apache.poi.version>5.4.1</org.apache.poi.version>
+    <org.bouncycastle.version>1.78</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
-    <org.cometd.version>7.0.11</org.cometd.version>
+    <!-- START: CometD -->
+    <org.cometd.version>7.0.17</org.cometd.version>
     <!--
-      jetty-client is a dependency coming from cometd. as we use cometd, the version for jetty is 11.0.18.
-      (To Override Spring dependencies)
+      jetty-* is a dependency coming from cometd.
     -->
-    <jetty.version>11.0.18</jetty.version>
+    <jetty.version>11.0.24</jetty.version>
+    <!-- END: CometD  libraries versions -->
 
     <org.imgscalr.version>4.2</org.imgscalr.version>
     <org.javassist.version>3.30.1-GA</org.javassist.version>
@@ -106,7 +105,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
     <version.cdi.spec>2.0.SP1</version.cdi.spec>
-    <version.apache.commons-beanutils>1.9.4</version.apache.commons-beanutils>
+    <version.apache.commons-beanutils>1.11.0</version.apache.commons-beanutils>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
     <version.twitter4j>3.0.5</version.twitter4j>
     <version.restfb>1.6.12</version.restfb>
@@ -129,7 +128,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <tomcat.version>10.1.35</tomcat.version>
+    <tomcat.version>10.1.43</tomcat.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
   <dependencyManagement>
@@ -141,16 +140,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${spring-boot-dependencies.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.liquibase</groupId>
-        <artifactId>liquibase-cdi</artifactId>
-        <version>${liquibase.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.liquibase</groupId>
-        <artifactId>liquibase-core</artifactId>
-        <version>${liquibase.version}</version>
       </dependency>
       <!-- Used by captcha -->
       <dependency>
@@ -195,21 +184,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-fileupload2-jakarta</artifactId>
         <version>${commons-fileupload2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-httpclient</groupId>
-        <artifactId>commons-httpclient</artifactId>
-        <version>${commons-httpclient.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>xpp3</groupId>
-            <artifactId>xpp3_min</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <!-- Used in Test scope only -->
       <dependency>
@@ -367,7 +341,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15on</artifactId>
+        <artifactId>bcprov-jdk18on</artifactId>
         <version>${org.bouncycastle.version}</version>
       </dependency>
       <!-- Used in Test scope for cometd -->
@@ -478,6 +452,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-util</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-util-ajax</artifactId>
         <version>${jetty.version}</version>
       </dependency>
       <dependency>
