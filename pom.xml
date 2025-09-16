@@ -47,7 +47,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <spring-boot-dependencies.version>3.5.3</spring-boot-dependencies.version>
+    <spring-boot-dependencies.version>3.5.5</spring-boot-dependencies.version>
     <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
@@ -128,7 +128,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <tomcat.version>10.1.43</tomcat.version>
+    <tomcat.version>10.1.45</tomcat.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
   </properties>
   <dependencyManagement>
