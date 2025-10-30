@@ -53,7 +53,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
-    <commons-fileupload2.version>2.0.0-M1</commons-fileupload2.version>
+    <commons-fileupload2.version>2.0.0-M4</commons-fileupload2.version>
     <commons-io.version>2.19.0</commons-io.version>
     <ecs.version>1.4.2</ecs.version>
     <!-- Additional LOGBACK dependencies -->
@@ -182,7 +182,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
-        <artifactId>commons-fileupload2-jakarta</artifactId>
+        <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
         <version>${commons-fileupload2.version}</version>
       </dependency>
       <!-- Used in Test scope only -->
