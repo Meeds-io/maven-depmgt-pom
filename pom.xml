@@ -91,6 +91,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.jibx.version>${version.jibx.plugin}</org.jibx.version>
     <org.json.version>20231013</org.json.version>
     <org.less4j.version>1.17.2</org.less4j.version>
+    <com.google.protobuf.version>4.33.0</com.google.protobuf.version>
     <org.mockito.version>3.11.1</org.mockito.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
@@ -510,6 +511,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
             <groupId>com.google.code.gson</groupId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <!-- protobuf is a dependency of com.github.sommeri:less4j-->
+      <!-- the version coming with last version of less4j (1.17.2) is protobuf-java:2.5.0 -->
+      <!-- protobuf-java:2.5.0 is vulnerable to CVE-2021-22569 and CVE-2024-7254 -->
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${com.google.protobuf.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
