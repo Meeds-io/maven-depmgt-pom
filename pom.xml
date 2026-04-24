@@ -47,7 +47,13 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
+    <!-- Start: Spring -->
     <spring-boot-dependencies.version>3.5.7</spring-boot-dependencies.version>
+    <!-- * Start: Spring AI Deps -->
+    <spring-ai-dependencies.version>1.1.0-RC1</spring-ai-dependencies.version>
+    <org.commonmark.version>0.27.0</org.commonmark.version>
+    <!-- * End: Spring AI Deps -->
+    <!-- End: Spring -->
     <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
@@ -142,6 +148,20 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- Start: Spring AI dependencies -->
+      <dependency>
+        <groupId>org.springframework.ai</groupId>
+        <artifactId>spring-ai-bom</artifactId>
+        <version>${spring-ai-dependencies.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.commonmark</groupId>
+        <artifactId>commonmark</artifactId>
+        <version>${org.commonmark.version}</version>
+      </dependency>
+      <!-- End: Spring AI dependencies -->
       <!-- Used by captcha -->
       <dependency>
         <groupId>com.jhlabs</groupId>
