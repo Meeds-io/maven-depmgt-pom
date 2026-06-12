@@ -48,9 +48,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
     <!-- Start: Spring -->
-    <spring-boot-dependencies.version>3.5.14</spring-boot-dependencies.version>
+    <spring-boot-dependencies.version>3.5.15</spring-boot-dependencies.version>
     <!-- * Start: Spring AI Deps -->
-    <spring-ai-dependencies.version>1.1.4</spring-ai-dependencies.version>
+    <spring-ai-dependencies.version>1.1.7</spring-ai-dependencies.version>
     <org.commonmark.version>0.28.0</org.commonmark.version>
     <!-- * End: Spring AI Deps -->
     <!-- End: Spring -->
