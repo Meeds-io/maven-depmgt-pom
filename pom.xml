@@ -56,7 +56,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- End: Spring -->
     <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
-    <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
+    <com.googlecode.owasp-java-html-sanitizer.version>20260101.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-fileupload2.version>2.0.0-M4</commons-fileupload2.version>
