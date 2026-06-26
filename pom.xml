@@ -133,7 +133,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.arquillian>1.7.1.Final</version.arquillian>
     <version.arquillian.tomcat>1.2.0.Final</version.arquillian.tomcat>
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
-    <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
+    <version.shrinkwrap.resolver>3.3.2</version.shrinkwrap.resolver>
     <!-- Servers -->
     <tomcat.version>10.1.55</tomcat.version>
     <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
