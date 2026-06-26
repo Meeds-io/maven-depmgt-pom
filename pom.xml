@@ -83,7 +83,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
     <!-- START: CometD -->
-    <org.cometd.version>7.0.17</org.cometd.version>
+    <org.cometd.version>7.0.19</org.cometd.version>
     <!--
       jetty-* is a dependency coming from cometd.
     -->
