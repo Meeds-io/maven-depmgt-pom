@@ -57,7 +57,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
-    <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-fileupload2.version>2.0.0-M4</commons-fileupload2.version>
     <commons-io.version>2.19.0</commons-io.version>
@@ -67,7 +66,13 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <mime-util.version>2.1.3</mime-util.version>
     <io.swagger.version>2.2.19</io.swagger.version>
     <io.jsonwebtoken.version>0.11.5</io.jsonwebtoken.version>
-    <javax.activation-api.version>1.2.0</javax.activation-api.version>
+    <jakarta.activation-api.version>2.1.3</jakarta.activation-api.version>
+    <jakarta.mail-api.version>2.1.3</jakarta.mail-api.version>
+    <org.eclipse.angus.mail.version>2.0.3</org.eclipse.angus.mail.version>
+    <org.eclipse.angus.activation.version>2.0.2</org.eclipse.angus.activation.version>
+    <org.simplejavamail.utils-mail-dkim.version>3.3.0</org.simplejavamail.utils-mail-dkim.version>
+    <net.markenwerk.utils-data-fetcher.version>4.0.2</net.markenwerk.utils-data-fetcher.version>
+    <com.icegreen.greenmail.version>2.1.3</com.icegreen.greenmail.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.portlet.version>2.0</javax.portlet.version>
@@ -107,7 +112,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
-    <version.javax.mail>1.6.2</version.javax.mail>
     <version.javax.resource>1.7.1</version.javax.resource>
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
@@ -257,12 +261,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <!-- \\\ -->
       <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>javax.activation-api</artifactId>
-        <version>${javax.activation-api.version}</version>
-      </dependency>
-      <!-- TODO: Artifacts to move to Jakarta EE -->
-      <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>jsr250-api</artifactId>
         <version>${javax.annotation.version}</version>
@@ -273,17 +271,37 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>javax.inject</artifactId>
         <version>${javax.inject.version}</version>
       </dependency>
-      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
-        <groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>${com.sun.mail.version}</version>
+        <groupId>jakarta.activation</groupId>
+        <artifactId>jakarta.activation-api</artifactId>
+        <version>${jakarta.activation-api.version}</version>
       </dependency>
-      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>javax.mail-api</artifactId>
-        <version>${version.javax.mail}</version>
+        <groupId>jakarta.mail</groupId>
+        <artifactId>jakarta.mail-api</artifactId>
+        <version>${jakarta.mail-api.version}</version>
+      </dependency>
+      <!-- Jakarta Mail runtime implementation, matches the runtime that utils-mail-dkim itself depends on -->
+      <dependency>
+        <groupId>org.eclipse.angus</groupId>
+        <artifactId>angus-mail</artifactId>
+        <version>${org.eclipse.angus.mail.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.angus</groupId>
+        <artifactId>angus-activation</artifactId>
+        <version>${org.eclipse.angus.activation.version}</version>
+      </dependency>
+      <!-- DKIM signing for outgoing SMTP mail, requires Jakarta Mail -->
+      <dependency>
+        <groupId>org.simplejavamail</groupId>
+        <artifactId>utils-mail-dkim</artifactId>
+        <version>${org.simplejavamail.utils-mail-dkim.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.markenwerk</groupId>
+        <artifactId>utils-data-fetcher</artifactId>
+        <version>${net.markenwerk.utils-data-fetcher.version}</version>
       </dependency>
       <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
@@ -363,6 +381,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk18on</artifactId>
+        <version>${org.bouncycastle.version}</version>
+      </dependency>
+      <!-- Used by utils-mail-dkim to load DKIM RSA private keys -->
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk18on</artifactId>
         <version>${org.bouncycastle.version}</version>
       </dependency>
       <!-- Used in Test scope for cometd -->
@@ -549,6 +573,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.mockito</groupId>
         <artifactId>mockito-inline</artifactId>
         <version>${org.mockito.version}</version>
+      </dependency>
+      <!-- In-process test SMTP server for MailService tests, requires Jakarta Mail -->
+      <dependency>
+        <groupId>com.icegreen</groupId>
+        <artifactId>greenmail</artifactId>
+        <version>${com.icegreen.greenmail.version}</version>
       </dependency>
       <!-- Picketlink IDM -->
       <dependency>
