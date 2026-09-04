@@ -136,7 +136,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <tomcat.version>11.0.24</tomcat.version>
+    <tomcat.version>11.0.25</tomcat.version>
   </properties>
   <dependencyManagement>
     <dependencies>
