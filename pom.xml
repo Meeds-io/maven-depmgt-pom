@@ -48,10 +48,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
     <!-- Start: Spring -->
-    <spring-boot-dependencies.version>3.5.15</spring-boot-dependencies.version>
+    <spring-boot-dependencies.version>4.1.1</spring-boot-dependencies.version>
     <!-- * Start: Spring AI Deps -->
-    <spring-ai-dependencies.version>1.1.7</spring-ai-dependencies.version>
+    <spring-ai-dependencies.version>2.0.1</spring-ai-dependencies.version>
     <org.commonmark.version>0.28.0</org.commonmark.version>
+    <com.okhttp3.version>4.12.0</com.okhttp3.version>
     <!-- * End: Spring AI Deps -->
     <!-- End: Spring -->
     <com.google.javascript.version>v20250407</com.google.javascript.version>
@@ -59,35 +60,35 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
     <com.sun.mail.version>1.6.2</com.sun.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
-    <commons-fileupload2.version>2.0.0-M4</commons-fileupload2.version>
-    <commons-io.version>2.19.0</commons-io.version>
+    <!-- TODO: no GA of commons-fileupload2 2.0.0 exists yet (as of 2026-07) -
+         re-check before relying on this milestone for prod. -->
+    <commons-fileupload2.version>2.0.0-M5</commons-fileupload2.version>
+    <commons-io.version>2.22.0</commons-io.version>
     <ecs.version>1.4.2</ecs.version>
     <!-- Additional LOGBACK dependencies -->
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
     <mime-util.version>2.1.3</mime-util.version>
     <io.swagger.version>2.2.19</io.swagger.version>
-    <io.jsonwebtoken.version>0.11.5</io.jsonwebtoken.version>
+    <io.jsonwebtoken.version>0.13.0</io.jsonwebtoken.version>
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.portlet.version>2.0</javax.portlet.version>
-    <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
-    <jakarta.servlet.jsp.version>3.1.1</jakarta.servlet.jsp.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
     <!-- Used to have Liquibase logging over logback -->
     <liquibase-slf4j.version>5.1.0</liquibase-slf4j.version>
     <!-- used by jdom has some wrong dependencies -->
-    <jsoup.version>1.20.1</jsoup.version>
+    <jsoup.version>1.22.2</jsoup.version>
     <org.apache.poi.version>5.4.1</org.apache.poi.version>
-    <org.bouncycastle.version>1.78</org.bouncycastle.version>
+    <org.bouncycastle.version>1.85</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
     <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
     <!-- START: CometD -->
-    <org.cometd.version>7.0.17</org.cometd.version>
+    <org.cometd.version>9.0.1</org.cometd.version>
     <!--
       jetty-* is a dependency coming from cometd.
     -->
-    <jetty.version>11.0.24</jetty.version>
+    <jetty.version>12.1.11</jetty.version>
     <!-- END: CometD  libraries versions -->
 
     <org.imgscalr.version>4.2</org.imgscalr.version>
@@ -98,11 +99,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.json.version>20231013</org.json.version>
     <org.less4j.version>1.17.2</org.less4j.version>
     <com.google.protobuf.version>4.33.0</com.google.protobuf.version>
-    <org.mockito.version>3.11.1</org.mockito.version>
+    <org.mockito.version>5.23.0</org.mockito.version>
     <org.picketlink.idm.version>1.4.6.Final</org.picketlink.idm.version>
     <org.staxnav.version>0.9.8</org.staxnav.version>
     <org.suigeneris.version>0.4.2</org.suigeneris.version>
-    <org.web3j.version>4.9.4</org.web3j.version>
+    <org.web3j.version>5.0.2</org.web3j.version>
     <xerces.version>2.12.2</xerces.version>
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
@@ -135,8 +136,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
     <version.shrinkwrap.resolver>2.2.5</version.shrinkwrap.resolver>
     <!-- Servers -->
-    <tomcat.version>10.1.55</tomcat.version>
-    <org.graalvm.js.version>22.0.0</org.graalvm.js.version>
+    <tomcat.version>11.0.24</tomcat.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -160,6 +160,16 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <groupId>org.commonmark</groupId>
         <artifactId>commonmark</artifactId>
         <version>${org.commonmark.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>${com.okhttp3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>logging-interceptor</artifactId>
+        <version>${com.okhttp3.version}</version>
       </dependency>
       <!-- End: Spring AI dependencies -->
       <!-- Used by captcha -->
@@ -427,12 +437,22 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.cometd.java</groupId>
+        <artifactId>cometd-java-server-http-jakarta</artifactId>
+        <version>${org.cometd.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.cometd.java</groupId>
         <artifactId>cometd-java-server-websocket-common</artifactId>
         <version>${org.cometd.version}</version>
       </dependency>
       <dependency>
         <groupId>org.cometd.java</groupId>
-        <artifactId>cometd-java-server-websocket-javax</artifactId>
+        <artifactId>cometd-java-server-websocket-jakarta</artifactId>
+        <version>${org.cometd.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.cometd.java</groupId>
+        <artifactId>cometd-java-client-websocket-jakarta</artifactId>
         <version>${org.cometd.version}</version>
       </dependency>
       <dependency>
@@ -442,7 +462,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.cometd.java</groupId>
-        <artifactId>cometd-java-oort</artifactId>
+        <artifactId>cometd-java-oort-jakarta</artifactId>
         <version>${org.cometd.version}</version>
       </dependency>
       <dependency>
@@ -452,7 +472,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </dependency>
       <dependency>
         <groupId>org.cometd.javascript</groupId>
-        <artifactId>cometd-javascript-jquery</artifactId>
+        <artifactId>cometd-javascript-common</artifactId>
         <version>${org.cometd.version}</version>
         <type>war</type>
       </dependency>
@@ -543,11 +563,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>${org.mockito.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-inline</artifactId>
         <version>${org.mockito.version}</version>
       </dependency>
       <!-- Picketlink IDM -->
@@ -838,17 +853,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>arquillian-tomcat-embedded-10</artifactId>
         <version>${version.arquillian.tomcat}</version>
         <scope>test</scope>
-      </dependency>
-      <!-- Third party dependencies used by deprecated services  -->
-      <dependency>
-        <groupId>org.graalvm.js</groupId>
-        <artifactId>js</artifactId>
-        <version>${org.graalvm.js.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.graalvm.js</groupId>
-        <artifactId>js-scriptengine</artifactId>
-        <version>${org.graalvm.js.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
