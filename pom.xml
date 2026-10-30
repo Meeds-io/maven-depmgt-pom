@@ -120,7 +120,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <version.google.oauth.client>1.33.3</version.google.oauth.client>
     <version.google.apis.oauth2>v2-rev157-1.25.0</version.google.apis.oauth2>
     <version.google.api.client>1.35.0</version.google.api.client>
-    <version.google.http.client>1.35.0</version.google.http.client>
+    <version.google.http.client>2.0.2</version.google.http.client>
     <version.google.http.client.jackson>1.29.2</version.google.http.client.jackson>
     <version.google.apis.plus>v1-rev590-1.25.0</version.google.apis.plus>
     <version.scribejava>6.9.0</version.scribejava>
