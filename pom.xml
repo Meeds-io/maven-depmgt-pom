@@ -83,7 +83,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <org.apache.poi.version>5.4.1</org.apache.poi.version>
     <org.bouncycastle.version>1.85</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
-    <org.codehaus.groovy.version>2.4.21</org.codehaus.groovy.version>
     <!-- START: CometD -->
     <org.cometd.version>9.0.1</org.cometd.version>
     <!--
@@ -414,12 +413,6 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>cargo-core-container-tomcat</artifactId>
         <version>${org.codehaus.cargo.version}</version>
         <scope>test</scope>
-      </dependency>
-      <!-- TODO: move to org.apache.groovy:groovy-all -->
-      <dependency>
-        <groupId>org.codehaus.groovy</groupId>
-        <artifactId>groovy-all</artifactId>
-        <version>${org.codehaus.groovy.version}</version>
       </dependency>
       <!-- Required by logback for colorized console on windows -->
       <dependency>
