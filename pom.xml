@@ -79,6 +79,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <liquibase-slf4j.version>5.1.0</liquibase-slf4j.version>
     <!-- used by jdom has some wrong dependencies -->
     <jsoup.version>1.22.2</jsoup.version>
+    <org.apache.groovy.version>6.0.0</org.apache.groovy.version>
     <org.apache.poi.version>5.4.1</org.apache.poi.version>
     <org.bouncycastle.version>1.85</org.bouncycastle.version>
     <org.codehaus.cargo.version>0.9</org.codehaus.cargo.version>
@@ -140,6 +141,14 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   </properties>
   <dependencyManagement>
     <dependencies>
+      <!-- Groovy: imported before Spring Boot's BOM, which manages org.apache.groovy at another version. Of two imported BOMs managing the same artifact, Maven keeps the first one's version -->
+      <dependency>
+        <groupId>org.apache.groovy</groupId>
+        <artifactId>groovy-bom</artifactId>
+        <version>${org.apache.groovy.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!-- Spring dependencies -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
