@@ -58,7 +58,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <com.google.javascript.version>v20250407</com.google.javascript.version>
     <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
     <com.googlecode.owasp-java-html-sanitizer.version>20240325.1</com.googlecode.owasp-java-html-sanitizer.version>
-    <com.sun.mail.version>1.6.2</com.sun.mail.version>
+    <org.eclipse.angus.mail.version>2.0.5</org.eclipse.angus.mail.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <!-- TODO: no GA of commons-fileupload2 2.0.0 exists yet (as of 2026-07) -
          re-check before relying on this milestone for prod. -->
@@ -70,7 +70,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <mime-util.version>2.1.3</mime-util.version>
     <io.swagger.version>2.2.19</io.swagger.version>
     <io.jsonwebtoken.version>0.13.0</io.jsonwebtoken.version>
-    <javax.activation-api.version>1.2.0</javax.activation-api.version>
+    <jakarta.activation-api.version>2.1.4</jakarta.activation-api.version>
     <javax.annotation.version>1.0</javax.annotation.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.portlet.version>2.0</javax.portlet.version>
@@ -108,7 +108,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     <javax.ccpp.version>1.0</javax.ccpp.version>
     <version.jaxb>2.3.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
-    <version.javax.mail>1.6.2</version.javax.mail>
+    <jakarta.mail.version>2.1.5</jakarta.mail.version>
     <version.javax.resource>1.7.1</version.javax.resource>
     <version.jregex>1.2_01</version.jregex>
     <version.japex>1.2.3</version.japex>
@@ -273,11 +273,10 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <version>${io.jsonwebtoken.version}</version>
       </dependency>
       <!-- \\\ -->
-      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>javax.activation-api</artifactId>
-        <version>${javax.activation-api.version}</version>
+        <groupId>jakarta.activation</groupId>
+        <artifactId>jakarta.activation-api</artifactId>
+        <version>${jakarta.activation-api.version}</version>
       </dependency>
       <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
@@ -291,17 +290,17 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <artifactId>javax.inject</artifactId>
         <version>${javax.inject.version}</version>
       </dependency>
-      <!-- TODO: Artifacts to move to Jakarta EE -->
+      <!-- Jakarta Mail implementation (Eclipse Angus). Its jar also bundles the jakarta.mail API classes
+           (2.0.5 bundles API 2.1.5), so org.eclipse.angus.mail.version and jakarta.mail.version must move together -->
       <dependency>
-        <groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>${com.sun.mail.version}</version>
+        <groupId>org.eclipse.angus</groupId>
+        <artifactId>jakarta.mail</artifactId>
+        <version>${org.eclipse.angus.mail.version}</version>
       </dependency>
-      <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>javax.mail-api</artifactId>
-        <version>${version.javax.mail}</version>
+        <groupId>jakarta.mail</groupId>
+        <artifactId>jakarta.mail-api</artifactId>
+        <version>${jakarta.mail.version}</version>
       </dependency>
       <!-- TODO: Artifacts to move to Jakarta EE -->
       <dependency>
